@@ -1,0 +1,41 @@
+#logo {
+    width: 33%;
+    padding: 0 50px;
+    margin-right: 350px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.buttons{
+    display: flex;
+    /* flex-direction: row; */
+    /* align-content: space-between; */
+
+}
+.buttons p {
+    margin: 22.5px 25px;
+    flex-grow: 1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:400;
+}
+
+.btn {
+    -webkit-border-radius: 6;
+    -moz-border-radius: 6;
+    border-radius: 6px;
+    font-family: Arial;
+    color: #f03e62;
+    font-size: 15px;
+    padding: 15px;
+    background: #ffffff;
+    border: solid #f03e62 2px;
+    text-decoration: none;
+    margin-left: 25px;
+    margin-top: 7.5px;
+}
+
+.btn:hover {
+    margin-right: 25px;
+    background: #f0d8dd;
+}
