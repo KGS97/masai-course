@@ -1,17 +1,14 @@
 #logo {
-    width: 33%;
-    padding: 0 50px;
-    margin:0 66px;
+    width: 25%;
 }
 .container{
     display: flex;
     flex-direction: row;
+    flex-grow: 1;
 }
 .buttons{
     display: flex;
-    /* flex-direction: row; */
-    /* align-content: space-between; */
-
+    
 }
 .buttons p {
     margin: 22.5px 25px;
@@ -38,7 +35,8 @@
     background: #ffffff;
     border: solid #f03e62 2px;
     text-decoration: none;
-    margin-left: 25px;
+    margin: 10px;
+    flex-grow: 1;
     margin-top: 7.5px;
 }
 
