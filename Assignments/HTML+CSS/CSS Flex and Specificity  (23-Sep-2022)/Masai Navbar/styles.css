@@ -19,6 +19,13 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight:300;
 }
+.buttons p:hover {
+    margin: 22.5px 25px;
+    flex-grow: 1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    color: #f03e62;
+}
 
 .btn {
     -webkit-border-radius: 6;
@@ -27,7 +34,7 @@
     font-family: Arial;
     color: #f03e62;
     font-size: 15px;
-    padding: 15px;
+    padding: 10px;
     background: #ffffff;
     border: solid #f03e62 2px;
     text-decoration: none;
@@ -36,6 +43,22 @@
 }
 
 .btn:hover {
-    margin-right: 25px;
+    margin-left: 25px;
     background: #f0d8dd;
+}
+
+#referral{
+    margin-top: 15px;
+    color:rgb(201, 106, 248);
+}
+#referral:hover{
+background-color: rgb(249, 241, 253);
+margin:0;
+padding: 15px 25px;
+border-radius: 10px;
+}
+
+
+#hand{
+    width: 20px;
 }
