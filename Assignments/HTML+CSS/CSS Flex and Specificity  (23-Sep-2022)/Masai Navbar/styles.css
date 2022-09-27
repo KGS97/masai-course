@@ -8,9 +8,9 @@
 }
 .buttons{
     display: flex;
-    width: max-content;
 }
 .buttons p {
+    min-width: max-content;
     margin: 22.5px 25px;
     flex: 1;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -31,25 +31,24 @@
     background: #ffffff;
     border: solid #f03e62 2px;
     text-decoration: none;
-    margin: 10px;
+    margin: 5px 2.5px 0 10px;
     flex-grow: 1;
-    margin-top: 25px;
+    
 }
 
 .btn:hover {
     background: #f0d8dd;
-    margin-top: 25px;
 }
 
 #referral{
-    margin-top: 15px;
+    margin: 5px;
+    padding: 10px;
     color:rgb(201, 106, 248);
 }
 #referral:hover{
+border-radius: 5px;
 background-color: rgb(249, 241, 253);
-margin:0;
-padding: 15px 25px;
-border-radius: 10px;
+
 }
 
 
