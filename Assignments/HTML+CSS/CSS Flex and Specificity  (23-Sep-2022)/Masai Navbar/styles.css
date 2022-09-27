@@ -4,23 +4,19 @@
 .container{
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
+    flex: 1;
 }
 .buttons{
     display: flex;
-    
+    width: max-content;
 }
 .buttons p {
     margin: 22.5px 25px;
-    flex-grow: 1;
+    flex: 1;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight:300;
 }
 .buttons p:hover {
-    margin: 22.5px 25px;
-    flex-grow: 1;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 300;
     color: #f03e62;
 }
 
@@ -37,12 +33,12 @@
     text-decoration: none;
     margin: 10px;
     flex-grow: 1;
-    margin-top: 7.5px;
+    margin-top: 25px;
 }
 
 .btn:hover {
-    margin-left: 25px;
     background: #f0d8dd;
+    margin-top: 25px;
 }
 
 #referral{

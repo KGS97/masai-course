@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web-101 C2</title>
+    <style>
+      *{
+        text-align: center;
+      }
+      .top{
+        display: flex;
+        flex-basis:50%;
+        gap: 5%;
+        margin: 0 10%;
+      }
+      
+      .top p,h1 {
+        text-align: justify;
+      }
+      
+      .mid>div:nth-child(2){
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 1%;
+        margin: 0 10%;
+      }
+      .mid>div:nth-child(2) div{
+        background-color: yellowgreen;
+        color: white;
+      }
+      .bottom h1,.mid h1{
+        text-align: center;
+      }
+      .bottom>div:nth-child(2){
+        display: grid;
+        grid-template-columns: repeat(4,18vw);
+        margin: 0 10%;
+        gap: 2.5%;
+        margin-bottom: 15%;
+      }
+      .bottom>div:nth-child(2) img{
+        width: 18vw;
+      }
+      @media all and (max-width: 1100px) and (min-width:601px) {
+       .top{
+        flex-flow:column;
+       }
+       .top img {
+        max-width:100%;
+      }
+      .mid>div:nth-child(2){
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1%;
+        background-color: ghostwhite;
+        margin-bottom: 15%;
+      }
+      .bottom>div:nth-child(2){
+        grid-template-columns: repeat(2,1fr);
+      }
+        /* Medium Screen Styles  */
+      }
+
+      @media all and (max-width: 601px) and (min-width:200px) {
+        /* Small Screen Styles  */
+        .top{
+        flex-flow:column;
+       }
+       .top img {
+        max-width:100%;
+      }
+      .mid>div:nth-child(2){
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 2.5%;
+        min-height: max-content;
+      }
+      .mid>div:nth-child(2) div{
+        min-height: max-content;
+      }
+      .bottom>div:nth-child(2){
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 2.5%;
+      }
+      }
+      button {
+  -webkit-border-radius: 2.5;
+  -moz-border-radius: 2.5;
+  border-radius: 2.5px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 15px;
+  padding: 10px;
+  border: solid #000000 2px;
+  text-decoration: none;
+  background-color:white;
+}
+
+button:hover {
+  background: whitesmoke;
+  text-decoration: none;
+}
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <div>
+        <h1>Sobre a Plataforma de Gestão MarketUP</h1>
+        <p>Nosso sistema oferece uma série de recursos e benefícios para facilitar o dia a dia do seu negócio, com praticidade e
+        maior agilidade na tomada de decisões, através da nossa plataforma ERP 100% gratuita.</p>
+        
+        <p>No ano de 2022, nos tornamos a plataforma ERP recomendada pelo Sebrae (Serviço Brasileiro de Apoio às Micro e Pequenas
+        Empresas). Com o intuito em agregar diversas frentes junto ao Sebrae, com soluções digitais inovadoras voltadas para
+        automatizar e desburocratizar o dia a dia das micro e/ou pequenas empresas.</p>
+        
+        <p>Deixe de lado planilhas e papéis ao gerenciar sua empresa! Abra sua conta gratuita no MarketUP e economize tempo e
+        dinheiro na sua gestão. Conheça mais sobre nossa história!</p>
+      </div>
+      <div>
+        <img src="https://marketup.com/wp-content/uploads/2022/06/Home-Mock.png" alt="mock">
+      </div>
+      <!-- Two Divs should be inside here  -->
+    </div>
+    <div class="mid">
+      <div><h1>Recursos Relacionados</h1>
+      <p>Impulsione ainda mais o seu negocio com as ferrmante que o ERP MarketUP oferece para sua empresa</p></div>
+      <div>
+        <div>
+          <img src="https://marketup.com/wp-content/themes/marketup/assets/icons/recursos/vendas.svg" alt="para">
+          <p>Para Suas Vendas</p>
+          <p>Frente de Caixa (PDV)</p>
+          <p>Loja Virtual</p>
+          <p>Pelidos</p>
+        </div>
+        <div>
+          <img src="https://marketup.com/wp-content/themes/marketup/assets/icons/recursos/vendas.svg" alt="para">
+          <p>Para Suas Vendas</p>
+          <p>Frente de Caixa (PDV)</p>
+          <p>Loja Virtual</p>
+          <p>Pelidos</p>
+        </div>
+        <div>
+          <img src="https://marketup.com/wp-content/themes/marketup/assets/icons/recursos/vendas.svg" alt="para">
+          <p>Para Suas Vendas</p>
+          <p>Frente de Caixa (PDV)</p>
+          <p>Loja Virtual</p>
+          <p>Pelidos</p>
+        </div>
+        <div>
+          <img src="https://marketup.com/wp-content/themes/marketup/assets/icons/recursos/vendas.svg" alt="para">
+          <p>Para Suas Vendas</p>
+          <p>Frente de Caixa (PDV)</p>
+          <p>Loja Virtual</p>
+          <p>Pelidos</p>
+        </div>
+        <div>
+          <img src="https://marketup.com/wp-content/themes/marketup/assets/icons/recursos/vendas.svg" alt="para">
+          <p>Para Suas Vendas</p>
+          <p>Frente de Caixa (PDV)</p>
+          <p>Loja Virtual</p>
+          <p>Pelidos</p>
+        </div>
+        <div>
+          <img src="https://marketup.com/wp-content/themes/marketup/assets/icons/recursos/vendas.svg" alt="para">
+          <p>Para Suas Vendas</p>
+          <p>Frente de Caixa (PDV)</p>
+          <p>Loja Virtual</p>
+          <p>Pelidos</p>
+        </div>
+        <div>
+          <img src="https://marketup.com/wp-content/themes/marketup/assets/icons/recursos/vendas.svg" alt="para">
+          <p>Para Suas Vendas</p>
+          <p>Frente de Caixa (PDV)</p>
+          <p>Loja Virtual</p>
+          <p>Pelidos</p>
+        </div>
+        <div>
+          <img src="https://marketup.com/wp-content/themes/marketup/assets/icons/recursos/vendas.svg" alt="para">
+          <p>Para Suas Vendas</p>
+          <p>Frente de Caixa (PDV)</p>
+          <p>Loja Virtual</p>
+          <p>Pelidos</p>
+        </div>
+      </div>
+      <!-- Two Divs should be inside here and on the second div you have to put 8 caards  -->
+    </div>
+    <div class="bottom">
+        <div>
+          <h1>Conheca nossos segmentos</h1>
+          <p>Contamos com funcionalides exclusivas para atender diversos segmentos do mercado</p>
+        </div>
+        <div>
+          <div><img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-09-08/Screenshot%202022-09-06%20at%2012.13.44%20PM_859545.png" alt="repair">
+          <h1>Lorem ipsum dolor sit amet.</h1>
+          <button type="button">Saiba Mais</button>
+          </div>
+          <div><img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-09-08/Screenshot%202022-09-06%20at%2012.13.44%20PM_859545.png" alt="repair">
+          <h1>Lorem ipsum dolor sit amet.</h1>
+          <button type="button">Saiba Mais</button>
+          </div>
+          <div>
+            <img
+              src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-09-08/Screenshot%202022-09-06%20at%2012.13.44%20PM_859545.png"
+              alt="repair">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <button type="button">Saiba Mais</button>
+          </div>
+          <div>
+            <img
+              src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-09-08/Screenshot%202022-09-06%20at%2012.13.44%20PM_859545.png"
+              alt="repair">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <button type="button">Saiba Mais</button>
+          </div>
+        </div>
+      <!-- Two Divs should be inside here and on the second div you have to put 4 caards  -->
+    </div>
+  </body>
+</html>
