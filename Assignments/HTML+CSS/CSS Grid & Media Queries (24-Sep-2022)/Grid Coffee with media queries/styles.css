@@ -19,7 +19,7 @@ align-items: center;
     color: #a68966;
 }
 .container>div{
-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+box-shadow: #f9e9d6 0px 20px 25px -5px, #f9e9d6 0px 10px 10px -5px;
 background-color: white;
 padding: 2.5%;
 padding-left: 10%;
