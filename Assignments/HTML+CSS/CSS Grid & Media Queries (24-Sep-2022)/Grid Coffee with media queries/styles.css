@@ -1,0 +1,10 @@
+.container{
+    margin-top: 2.5%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5%;
+}
+.container>div>div{
+display: flex;
+align-content: space-between;
+}
