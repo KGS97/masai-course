@@ -6,5 +6,9 @@
 }
 .container>div>div{
 display: flex;
-align-content: space-between;
+justify-content: space-between;
+}
+
+.container>div>div h1{
+    
 }
