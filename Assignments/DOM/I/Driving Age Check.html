@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-I DRIVING AGE CHECK</title>
+</head>
+<body>
+    <input type="text" name="age" id="ageCheck">
+     <button id="Submit">Submit</button>
+     <p id="output"></p>
+<script>
+    var age = document.getElementById("ageCheck").value;
+    if(age==18){
+        document.getElementById("output").innerText= "You are just old enough to drive in India!"
+    }
+
+</script>
+</body>
+
+</html>
