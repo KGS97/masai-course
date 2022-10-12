@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calculator</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="number" name="" id="num1">
+        <input type="number" name="" id="num2">
+        <br>
+        <button id="add">Add</button>
+        <button id="subtract">Subtract</button>
+        <button id="multiply">Multiply</button>
+        <button id="divide">Divide</button>
+    </form>
+    <p id="output"></p>
+    <script>
+        
+        document.getElementById("add").addEventListener("click",sum)
+        
+        function sum(){
+            var output = document.getElementById("num1").value + document.getElementById("num2").value;
+            alert(output)
+        }
+    </script>
+</body>
+
+</html>
