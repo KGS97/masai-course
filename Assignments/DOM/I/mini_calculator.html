@@ -10,8 +10,8 @@
 
 <body>
     <form action="">
-        <input type="number" name="" id="num1">
-        <input type="number" name="" id="num2">
+        <input type="text" name="" id="num1">
+        <input type="text" name="" id="num2">
         <br>
         <button id="add">Add</button>
         <button id="subtract">Subtract</button>
@@ -20,11 +20,11 @@
     </form>
     <p id="output"></p>
     <script>
-        
+        var a = 1*document.getElementById("num1").value;
+        var b = 1 * document.getElementById("num2").value;
         document.getElementById("add").addEventListener("click",sum)
-        
         function sum(){
-            var output = document.getElementById("num1").value + document.getElementById("num2").value;
+            var output =  a+b;
             alert(output)
         }
     </script>
