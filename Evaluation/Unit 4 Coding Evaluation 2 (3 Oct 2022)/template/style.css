@@ -1,0 +1,65 @@
+body>*{
+    text-align: center;
+    margin: 2.5% auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#create{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 4%;
+    width: 90%;
+    margin: 2.5% auto;
+    text-shadow: 1px 1px gray;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    min-width: 66%;
+    max-width: 90%;
+    margin: auto;
+}
+form>*{
+    margin: .5%;
+    padding: .75%;
+}
+table{
+    max-width: 100%;
+}
+thead{
+    border: 1px solid black;
+}
+
+@media screen and (min-width:800px) and (max-width:600px) {
+    #create{
+    min-width: 90%;
+    max-width: 95%;
+    margin: 2.5% auto;
+    padding: 1.5%;
+    }
+    form{
+        min-width: 90%;
+        max-width: 95%;
+    }
+    form>* {
+        margin: .25%;
+        padding: .5%;
+    }
+    
+
+}
+@media screen and (max-width:599px) {
+    #create{
+    min-width: 95%;
+    max-width: 97.5%;
+    margin: 1% auto;
+    padding: 1%;
+    }
+    form {
+        min-width: 95%;
+        max-width: 99%;
+    }
+    form>* {
+        margin: .25%;
+        padding: .5%;
+    }
+    
+}
