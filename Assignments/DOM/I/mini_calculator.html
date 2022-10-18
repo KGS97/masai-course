@@ -20,11 +20,9 @@
     </form>
     <p id="output"></p>
     <script>
-        var a = 1*document.getElementById("num1").value;
-        var b = 1 * document.getElementById("num2").value;
         document.getElementById("add").addEventListener("click",sum)
         function sum(){
-            var output =  a+b;
+            var output =  document.getElementById("num1").value + document.getElementById("num2").value;
             alert(output)
         }
     </script>
