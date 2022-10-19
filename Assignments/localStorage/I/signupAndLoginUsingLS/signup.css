@@ -50,6 +50,10 @@ form>input {
     margin-top: 10px !important;
     border: 1px solid rgb(174, 174, 174) !important;
 }
+label[for="fullName"]{
+    text-align: left !important;
+    padding: 0 !important;
+}
 
 label[for="email"] {
     width: 91.66%;
