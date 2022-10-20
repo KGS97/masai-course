@@ -260,18 +260,51 @@ function displayData() {
         let image = document.createElement("img");
         image.setAttribute('src',elem.image_url)
         image.setAttribute('alt',elem.id)
-        console.log(image)
+        // console.log(image)
         let h5 = document.createElement("h5");
         h5.innerText=elem.name;
         let childDiv = document.createElement("div");
         let price = document.createElement("p");
         price.innerText = elem.price;
+        price.setAttribute('id',"price")
         let strikedoffprice = document.createElement("p");
+        strikedoffprice.setAttribute('id',"strikedoffprice")
         strikedoffprice.innerText = elem.strikedoffprice;
         childDiv.append(price,strikedoffprice)
         let button = document.createElement("button");
         button.innerText="Add to Cart"
+        button.setAttribute('class','btn btn-primary')
+        button.addEventListener('click',add2Cart)
         div.append(image,h5,childDiv,button)
         document.getElementById("mens").append(div);
     })
+}
+
+let cart = [];
+cart = JSON.parse(localStorage.getItem(cart)) || [];
+
+function add2Cart(){
+  let quantity;
+  let obj = {};
+  let target = this.parentNode
+  let image_url = target.querySelector("img").getAttribute('src')
+  let name = target.querySelector("h5").innerText;
+  let price = target.querySelector("#price").innerText;
+  let strikedoffprice = target.querySelector("#strikedoffprice").innerText;
+  let itemExists = false;
+  for(const el of cart){
+    if(el.name == name){
+      el.quantity++;
+      itemExists=true;
+    }
+  }
+  if(!itemExists){
+    obj.image_url = image_url;
+    obj.name = name;
+    obj.price = price;
+    obj.strikedoffprice = strikedoffprice;
+    obj.quantity = 1;
+    cart.push(obj);
+  }
+  localStorage.setItem("cart",JSON.stringify(cart));
 }
