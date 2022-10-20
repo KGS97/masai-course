@@ -21,3 +21,23 @@ h5+div {
 h5+div>p:first-child {
     text-decoration: line-through;
 }
+@media screen and (max-width:999px) and (min-width:801px) {
+    #mens {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 7.5px;
+    }
+}
+
+@media screen and (max-width:800px) and (min-width:600px) {
+    #mens {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width:599px) {
+    #mens {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2.5px;
+    }
+}
