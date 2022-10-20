@@ -21,6 +21,13 @@ h5+div>p:first-child {
     text-decoration: line-through;
 }
 
+@media screen and (max-width:999px) and (min-width:801px) {
+    #womens {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 7.5px;
+    }
+}
+
 @media screen and (max-width:800px) and (min-width:600px) {
     #womens {
             grid-template-columns: repeat(2, 1fr);
