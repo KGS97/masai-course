@@ -471,7 +471,10 @@ function setData(){
     strikedoffprice.innerText = elem.strikedoffprice;
     let priceBox = document.createElement("div");
     priceBox.append(price,strikedoffprice);
-    div.append(image,name,priceBox)
+    let button = document.createElement("button");
+    button.innerText="Add to Cart"
+    div.append(image,name,priceBox,button)
     document.getElementById("womens").append(div);
+    
   })
 }

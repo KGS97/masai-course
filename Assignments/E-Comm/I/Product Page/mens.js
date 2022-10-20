@@ -260,7 +260,7 @@ function displayData() {
         let image = document.createElement("img");
         image.setAttribute('src',elem.image_url)
         image.setAttribute('alt',elem.id)
-        console.log(elem.id);
+        console.log(image)
         let h5 = document.createElement("h5");
         h5.innerText=elem.name;
         let childDiv = document.createElement("div");
@@ -269,7 +269,9 @@ function displayData() {
         let strikedoffprice = document.createElement("p");
         strikedoffprice.innerText = elem.strikedoffprice;
         childDiv.append(price,strikedoffprice)
-        div.append(image,h5,childDiv);
+        let button = document.createElement("button");
+        button.innerText="Add to Cart"
+        div.append(image,h5,childDiv,button)
         document.getElementById("mens").append(div);
     })
 }
