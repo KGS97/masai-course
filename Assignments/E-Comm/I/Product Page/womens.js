@@ -457,9 +457,9 @@ var womensData = [
   ];
 setData();
 function setData(){
-  womensData.map(function(elem){
+  womensData.map(function(elem,id){
     let div = document.createElement("div");
-
+    document.querySelector('body').style.textAlign='center'
     let image = document.createElement("img");
     image.setAttribute('src',elem.image_url)
     image.setAttribute('alt',elem.id)
@@ -467,14 +467,47 @@ function setData(){
     name.innerText = elem.name;
     let price = document.createElement("p");
     price.innerText = elem.price;
+    price.setAttribute('id','price')
     let strikedoffprice = document.createElement("p");
     strikedoffprice.innerText = elem.strikedoffprice;
+    strikedoffprice.setAttribute('id','strikedoffprice')
     let priceBox = document.createElement("div");
     priceBox.append(price,strikedoffprice);
     let button = document.createElement("button");
+    button.setAttribute('class','btn btn-primary')
+    button.addEventListener('click',add2Cart)
     button.innerText="Add to Cart"
     div.append(image,name,priceBox,button)
-    document.getElementById("womens").append(div);
-    
+    document.getElementById("womens").append(div);   
   })
+}
+
+let cart = [];
+cart = JSON.parse(localStorage.getItem(cart)) || [];
+
+function add2Cart(){
+  console.log('ok')
+  let quantity;
+  let obj = {};
+  let target = this.parentNode
+  let image_url = target.querySelector("img").getAttribute('src')
+  let name = target.querySelector("h5").innerText;
+  let price = target.querySelector("#price").innerText;
+  let strikedoffprice = target.querySelector("#strikedoffprice").innerText;
+  let itemExists = false;
+  for(const el of cart){
+    if(el.name == name){
+      el.quantity++;
+      itemExists=true;
+    }
+  }
+  if(!itemExists){
+    obj.image_url = image_url;
+    obj.name = name;
+    obj.price = price;
+    obj.strikedoffprice = strikedoffprice;
+    obj.quantity = 1;
+    cart.push(obj);
+  }
+  localStorage.setItem("cart",JSON.stringify(cart));
 }
