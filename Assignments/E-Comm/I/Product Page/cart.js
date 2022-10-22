@@ -45,7 +45,11 @@ function showCart() {
       parentDiv.append(descriptionContainer, countContainer);
       document.getElementById("items").append(parentDiv);
     });
+    let totalContainer = document.createElement("div");
+    totalContainer.setAttribute('id','totalContainer')
+    document.querySelector('body').append(totalContainer)
     subTotal();
+    buyBtn();
   }
 }
 
@@ -74,6 +78,7 @@ function decreaseCount() {
 
 function refreshCart() {
   document.getElementById("items").innerHTML = "";
+  document.querySelector(".btn-dark").remove();
   remove0s();
   cart = JSON.parse(localStorage.getItem("cart"));
   localStorage.setItem("cart", JSON.stringify(cart));
@@ -94,6 +99,7 @@ function subTotal() {
   cart = JSON.parse(localStorage.getItem("cart"));
   if (cart.length == 0) {
     document.getElementById("subtotal").remove()
+    document.querySelector('btn-dark').remove()
   } else {
     total.style.margin = "auto";
     let sum = 0;
@@ -101,7 +107,7 @@ function subTotal() {
       sum += x.price * x.quantity;
     }
     total.innerText = "Subtotal:" + sum;
-    document.querySelector("body").append(total);
+    document.querySelector("#totalContainer").append(total);
   }
 }
 
@@ -111,4 +117,15 @@ function remove0s() {
     return elem.quantity > 0;
   });
   localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+function buyBtn(){
+  cart = JSON.parse(localStorage.getItem('cart'));
+  if(cart.length>0){
+    let btn = document.createElement("button");
+    btn.setAttribute("class", "btn btn-dark");
+    btn.innerText = "Buy";
+    btn.setAttribute("href", "payment.html");
+    document.querySelector("body").append(btn);
+  }
 }
