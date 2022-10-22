@@ -124,8 +124,12 @@ function buyBtn(){
   if(cart.length>0){
     let btn = document.createElement("button");
     btn.setAttribute("class", "btn btn-dark");
+    btn.addEventListener('click',redirect)
     btn.innerText = "Buy";
     btn.setAttribute("href", "payment.html");
     document.querySelector("body").append(btn);
   }
+}
+function redirect() {
+  window.location.href = "payment.html";
 }
