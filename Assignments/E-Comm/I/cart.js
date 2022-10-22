@@ -132,4 +132,6 @@ function buyBtn(){
 }
 function redirect() {
   window.location.href = "payment.html";
+  total = document.getElementById('subtotal').innerText;
+  localStorage.setItem('total',total)
 }
