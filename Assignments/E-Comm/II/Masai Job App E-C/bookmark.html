@@ -28,6 +28,24 @@
     </main>
   </body>
   <script>
+    let bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
+    if(bookmarks.length>0){
+      showBookmarks();
+    }
+    function showBookmarks(){
+      bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
+      bookmarks.map(function(elem){
+        let tr = document.createElement('tr');
+        let name = document.createElement('td');
+        name.innerText=elem.name
+        let email = document.createElement('td');
+        email.innerText = elem.email
+        let role = document.createElement('td')
+        role.innerText = elem.role
+        tr.append(name,email,role);
+        document.getElementById('body').append(tr);
+      })
+    }
     //you need to code here
   </script>
 </html>

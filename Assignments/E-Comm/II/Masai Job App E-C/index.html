@@ -31,6 +31,7 @@
     </form>
   </body>
   <script>
+    let jobList =[];
     //you need to code here
     document.getElementById('submit').addEventListener('click',setData)
     function setData(){
@@ -39,7 +40,8 @@
       obj.email = document.getElementById('email').value;
       obj.role = document.getElementById('role').value;
       obj.salary = document.getElementById('salary').value;
-      localStorage.setItem('jobList',JSON.stringify(obj));
+      jobList.push(obj);
+      localStorage.setItem('jobList',JSON.stringify(jobList));
     }
   </script>
 </html>

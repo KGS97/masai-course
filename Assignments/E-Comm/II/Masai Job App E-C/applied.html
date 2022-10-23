@@ -33,6 +33,51 @@
     </main>
   </body>
   <script>
+    let jobList = JSON.parse(localStorage.getItem("jobList")) || [];
+    //console.log(jobList.length);
+    if (jobList.length > 0) {
+      showList();
+    }
+
     //you need to code here
+    function showList() {
+      jobList = JSON.parse(localStorage.getItem("jobList"));
+      jobList.map(function (elem, i) {
+        let name = elem.name;
+        let email = elem.email;
+        let role = elem.role;
+        let salary = elem.salary;
+        let tr = document.createElement("tr");
+        let nametd = document.createElement("td");
+        nametd.innerText = name;
+        nametd.setAttribute("id", "name");
+        let emailtd = document.createElement("td");
+        emailtd.innerText = email;
+        emailtd.setAttribute("id", "email");
+        let roletd = document.createElement("td");
+        roletd.innerText = role;
+        roletd.setAttribute("id", "role");
+        let salarytd = document.createElement("td");
+        salarytd.innerText = salary;
+        salarytd.setAttribute("id", "salary");
+        let bookmarktd = document.createElement("td");
+        bookmarktd.innerText = "Bookmark";
+        bookmarktd.style.color = "dodgerblue";
+        bookmarktd.style.cursor = "pointer";
+        bookmarktd.addEventListener("click", setBookMark);
+        tr.append(nametd, emailtd, roletd, salarytd, bookmarktd);
+        document.getElementById("body").append(tr);
+      });
+    }
+    let bookmarks = [];
+    function setBookMark() {
+      let obj = {};
+      obj.name = document.getElementById('name').innerText;
+      obj.email = document.getElementById('email').innerText;
+      obj.role = document.getElementById('role').innerText;
+      obj.salary = document.getElementById('salary').innerText;
+      bookmarks.push(obj);
+      localStorage.setItem("bookmarks", JSON.stringify(bookmarks))
+    }
   </script>
 </html>
