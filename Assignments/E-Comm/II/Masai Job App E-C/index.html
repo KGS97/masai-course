@@ -32,7 +32,14 @@
   </body>
   <script>
     //you need to code here
-
-    
+    document.getElementById('submit').addEventListener('click',setData)
+    function setData(){
+      let obj={};
+      obj.name = document.getElementById('name').value;
+      obj.email = document.getElementById('email').value;
+      obj.role = document.getElementById('role').value;
+      obj.salary = document.getElementById('salary').value;
+      localStorage.setItem('jobList',JSON.stringify(obj));
+    }
   </script>
 </html>
