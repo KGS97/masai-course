@@ -26,9 +26,9 @@
     </select>
     <select id="filterRole" onchange="filterRole()">
       <option value="all">All</option>
-      <option value="fSD">FSD</option>
-      <option value="front">Frontend</option>
-      <option value="back">Backend</option>
+      <option value="FSD">FSD</option>
+      <option value="Backend">Frontend</option>
+      <option value="Frontend">Backend</option>
     </select>
     <main>
       <table>
@@ -51,13 +51,13 @@
     let jobList = JSON.parse(localStorage.getItem("jobList")) || [];
     //console.log(jobList.length);
     if (jobList.length > 0) {
-      showList();
+      showList(jobList);
     }
-
+    var filtered = jobList;
     //you need to code here
-    function showList() {
-      jobList = JSON.parse(localStorage.getItem("jobList"));
-      jobList.map(function (elem, i) {
+    function showList(arr) {
+      document.getElementById("body").innerHTML=""
+      arr.map(function (elem, i) {
         let name = elem.name;
         let email = elem.email;
         let role = elem.role;
@@ -83,36 +83,77 @@
         tr.append(nametd, emailtd, roletd, salarytd, bookmarktd);
         document.getElementById("body").append(tr);
       });
+      
     }
     let bookmarks = [];
     function setBookMark() {
       let obj = {};
-      obj.name = document.getElementById('name').innerText;
-      obj.email = document.getElementById('email').innerText;
-      obj.role = document.getElementById('role').innerText;
-      obj.salary = document.getElementById('salary').innerText;
+      obj.name = document.getElementById("name").innerText;
+      obj.email = document.getElementById("email").innerText;
+      obj.role = document.getElementById("role").innerText;
+      obj.salary = document.getElementById("salary").innerText;
       bookmarks.push(obj);
-      localStorage.setItem("bookmarks", JSON.stringify(bookmarks))
+      localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
     }
     function sortName() {
-
+      let val = document.getElementById("sortName").value;
+      if (val === "ascending") {
+        sortNameAscending();
+      } else if (val === "descending") {
+        sortNameDescending();
+      }
     }
 
     function sortSalary() {
-
+      let val = document.getElementById("sortSalary").value
+      if(val=="lth"){
+        sortLow2High()
+      }else if(val=="htl"){
+        sortHigh2Low()
+      }
     }
-
     function filterRole() {
-      let jobList = JSON.parse(localStorage.getItem("jobList")) || [];
       let val = document.getElementById("filterRole").value;
-      var filtered = jobList.filter(function (elem) {
-        if(val === 'all'){
+      filtered = jobList.filter(function (elem) {
+        if (val === "all") {
           return true;
-        }else{
-          return elem.role == val;
+        } else {
+          return elem.role === val;
         }
-      })
+      });
+      console.log(filtered);
+      showList(filtered)
+    }
+    function sortNameAscending() {
+      filtered.sort(function (a, b) {
+        if (a.name > b.name) return 1;
+        if (a.name < b.name) return -1;
+        else return 0;
+      });
       console.log(filtered)
+      showList(filtered)
+    }
+    function sortNameDescending() {
+      filtered.sort(function (a, b) {
+        if (b.name > a.name) return 1;
+        if (b.name < a.name) return -1;
+        else return 0;
+      });
+      console.log(filtered);
+      showList(filtered)
+    }
+    function sortHigh2Low(){
+      filtered.sort(function(a,b){
+        return b.salary-a.salary;
+      });
+      showList(filtered);
+    }
+    function sortLow2High(){
+      console.log("ok")
+      filtered.sort(function(a,b){
+        return a.salary-b.salary;
+      })
+      showList(filtered);
     }
   </script>
 </html>
