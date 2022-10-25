@@ -31,7 +31,7 @@
     </form>
   </body>
   <script>
-    let jobList =[];
+    let jobList = JSON.parse(localStorage.getItem("jobList")) || [];
     //you need to code here
     document.getElementById('submit').addEventListener('click',setData)
     function setData(){

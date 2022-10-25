@@ -14,7 +14,22 @@
       <div><a href="applied.html">Applied Jobs</a></div>
       <div><a href="bookmark.html">Bookmarks</a></div>
     </div>
-
+    <select id="sortName" onchange="sortName()">
+      <option value="">Sort by Names</option>
+      <option value="ascending">Ascending</option>
+      <option value="descending">Descending</option>
+    </select>
+    <select id="sortSalary" onchange="sortSalary()">
+      <option value="">Sort by Salary</option>
+      <option value="htl">High to Low</option>
+      <option value="lth">Low to High</option>
+    </select>
+    <select id="filterRole" onchange="filterRole()">
+      <option value="all">All</option>
+      <option value="fSD">FSD</option>
+      <option value="front">Frontend</option>
+      <option value="back">Backend</option>
+    </select>
     <main>
       <table>
         <thead>
@@ -78,6 +93,26 @@
       obj.salary = document.getElementById('salary').innerText;
       bookmarks.push(obj);
       localStorage.setItem("bookmarks", JSON.stringify(bookmarks))
+    }
+    function sortName() {
+
+    }
+
+    function sortSalary() {
+
+    }
+
+    function filterRole() {
+      let jobList = JSON.parse(localStorage.getItem("jobList")) || [];
+      let val = document.getElementById("filterRole").value;
+      var filtered = jobList.filter(function (elem) {
+        if(val === 'all'){
+          return true;
+        }else{
+          return elem.role == val;
+        }
+      })
+      console.log(filtered)
     }
   </script>
 </html>
