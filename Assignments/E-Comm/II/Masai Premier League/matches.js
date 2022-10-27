@@ -5,6 +5,7 @@ if(arr.length>0){
 }
 
 function showData(arr) {
+    document.querySelector("tbody").innerHTML="";
     arr.map(function(elem,index){
         let tr = document.createElement("tr");
         
@@ -47,7 +48,13 @@ function add2Fav(){
 function filter(){
     let val = document.getElementById("filterVenue").value;
     let filtered = arr.filter(function(elem){
-        return elem.venue == val;
+        if(val=="none"){
+            return true;
+        }else{
+            return elem.venue == val;
+        }
+
     })
-    console.log(filtered)
+    console.log(filtered);
+    showData(filtered);
 }
