@@ -1,5 +1,5 @@
 let Products = JSON.parse(localStorage.getItem("Products")) || [];
-document.querySelector("form").addEventListener("click", addData);
+document.querySelector("#add").addEventListener("click", addData);
 function addData() {
   event.preventDefault();
   let obj = {
@@ -12,4 +12,10 @@ function addData() {
   };
   Products.push(obj);
   localStorage.setItem("Products", JSON.stringify(Products));
+  document.getElementById("name").value = "";
+  document.getElementById("category").value = "";
+  document.getElementById("image").value = "";
+  document.getElementById("price").value = "";
+  document.getElementById("gender").value = "";
+  document.getElementById("sold").value = "false";
 }
