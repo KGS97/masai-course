@@ -5,7 +5,9 @@ arr.__proto__.push = function (n) {
   x++;
 };
 arr.__proto__.pop = function () {
-  delete arr[--x];
+  if (x != 0) {
+    delete arr[--x];
+  }
 };
 arr.__proto__.top = function () {
   let y = x - 1;
