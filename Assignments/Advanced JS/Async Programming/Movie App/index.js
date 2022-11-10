@@ -10,31 +10,31 @@ let Brahmaastra1 = new movie(
   "Brahmāstra",
   "September 9, 2022",
   "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuIc9iPQIG4n8PDRpwCSnpBgvuZuVKe9yhNe61YVpyH0HP_fwR",
-  "5.6"
+  "5.1"
 );
 let Brahmaastra2 = new movie(
   "Brahmāstra",
   "September 9, 2022",
   "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuIc9iPQIG4n8PDRpwCSnpBgvuZuVKe9yhNe61YVpyH0HP_fwR",
-  "5.6"
+  "5.2"
 );
 let Brahmaastra3 = new movie(
   "Brahmāstra",
   "September 9, 2022",
   "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuIc9iPQIG4n8PDRpwCSnpBgvuZuVKe9yhNe61YVpyH0HP_fwR",
-  "5.6"
+  "5.3"
 );
 let Brahmaastra4 = new movie(
   "Brahmāstra",
   "September 9, 2022",
   "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuIc9iPQIG4n8PDRpwCSnpBgvuZuVKe9yhNe61YVpyH0HP_fwR",
-  "5.6"
+  "5.4"
 );
 let Brahmaastra5 = new movie(
   "Brahmāstra",
   "September 9, 2022",
   "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuIc9iPQIG4n8PDRpwCSnpBgvuZuVKe9yhNe61YVpyH0HP_fwR",
-  "5.6"
+  "5.5"
 );
 let Brahmaastra6 = new movie(
   "Brahmāstra",
@@ -46,19 +46,19 @@ let Brahmaastra7 = new movie(
   "Brahmāstra",
   "September 9, 2022",
   "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuIc9iPQIG4n8PDRpwCSnpBgvuZuVKe9yhNe61YVpyH0HP_fwR",
-  "5.6"
+  "5.7"
 );
 let Brahmaastra8 = new movie(
   "Brahmāstra",
   "September 9, 2022",
   "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuIc9iPQIG4n8PDRpwCSnpBgvuZuVKe9yhNe61YVpyH0HP_fwR",
-  "5.6"
+  "5.8"
 );
 let Brahmaastra9 = new movie(
   "Brahmāstra",
   "September 9, 2022",
   "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuIc9iPQIG4n8PDRpwCSnpBgvuZuVKe9yhNe61YVpyH0HP_fwR",
-  "5.6"
+  "5.9"
 );
 
 arr.push(Brahmaastra1);
@@ -70,6 +70,7 @@ arr.push(Brahmaastra6);
 arr.push(Brahmaastra7);
 arr.push(Brahmaastra8);
 arr.push(Brahmaastra9);
+localStorage.setItem("movies", JSON.stringify(arr));
 let count = 0;
 function show1() {
   let obj = arr[count++];
