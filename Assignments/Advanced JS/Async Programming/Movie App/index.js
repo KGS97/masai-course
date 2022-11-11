@@ -10,13 +10,13 @@ let Brahmaastra1 = new movie(
   "Brahmāstra1",
   "September 9, 2022",
   "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuIc9iPQIG4n8PDRpwCSnpBgvuZuVKe9yhNe61YVpyH0HP_fwR",
-  "5.1"
+  "5.2"
 );
 let Brahmaastra2 = new movie(
   "Brahmāstra2",
   "September 9, 2022",
   "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuIc9iPQIG4n8PDRpwCSnpBgvuZuVKe9yhNe61YVpyH0HP_fwR",
-  "5.2"
+  "5.1"
 );
 let Brahmaastra3 = new movie(
   "Brahmāstra3",
@@ -28,13 +28,13 @@ let Brahmaastra4 = new movie(
   "Brahmāstra4",
   "September 9, 2022",
   "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuIc9iPQIG4n8PDRpwCSnpBgvuZuVKe9yhNe61YVpyH0HP_fwR",
-  "5.4"
+  "5.5"
 );
 let Brahmaastra5 = new movie(
   "Brahmāstra5",
   "September 9, 2022",
   "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuIc9iPQIG4n8PDRpwCSnpBgvuZuVKe9yhNe61YVpyH0HP_fwR",
-  "5.5"
+  "5.4"
 );
 let Brahmaastra6 = new movie(
   "Brahmāstra6",

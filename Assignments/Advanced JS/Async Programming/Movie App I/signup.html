@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="scripts/signup.js"></script>
     <title>Signup</title>
   </head>
 
@@ -19,13 +18,17 @@
     <div id="signup-form-div">
       <h1>Signup</h1>
       <form>
-        <input type="TEXT" placeholder="Enter your name" />
-        <input type="text" placeholder="Enter your contact" />
-        <input type="email" placeholder="Enter your email" />
-        <input type="text" placeholder="Enter your password" />
-        <input type="submit" name="" id="submit" />
-        <!--Write form input elements here-->
+        <input type="TEXT" placeholder="Enter your name" id="name" />
+        <input type="text" placeholder="Enter your contact" id="contact" />
+        <input type="email" placeholder="Enter your email" id="mail" />
+        <input
+          type="password"
+          placeholder="Enter your password"
+          id="password"
+        />
+        <button id="btn">Submit</button>
       </form>
     </div>
   </body>
 </html>
+<script src="scripts/signup.js"></script>
