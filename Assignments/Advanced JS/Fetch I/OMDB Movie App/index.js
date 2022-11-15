@@ -9,11 +9,14 @@ function fetchData() {
     })
     .then(function (res) {
       console.log(res);
-      showMovie(res);
+      if (res.Response == "False") {
+        unFound(search);
+      } else {
+        showMovie(res);
+      }
     })
     .catch(function (res) {
       console.log(res.Error);
-      unFound(search);
     });
 }
 
@@ -28,7 +31,9 @@ function showMovie(res) {
   document.getElementById("movies").append(img, h4, actors);
 }
 function unFound(search) {
-  console.log(search + " was Not found");
+  let h4 = document.createElement("h4");
+  h4.innerText = "Sorry " + search + " couldn't be found";
+  document.getElementById("movies").append(h4);
 }
 // Actors
 // :
