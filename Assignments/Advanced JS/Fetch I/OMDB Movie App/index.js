@@ -14,9 +14,6 @@ function fetchData() {
       } else {
         showMovie(res);
       }
-    })
-    .catch(function (res) {
-      console.log(res.Error);
     });
 }
 
@@ -28,7 +25,15 @@ function showMovie(res) {
   console.log(h4);
   let actors = document.createElement("p");
   actors.innerText = res.Actors;
-  document.getElementById("movies").append(img, h4, actors);
+  let str = res.Ratings[0].Value.slice(0, res.Ratings[0].Value.length - 3) * 1;
+  if (str > 8.5) {
+    let recom = document.createElement("p");
+    recom.innerText = "Recommended!!";
+    recom.style.color = "green";
+    document.getElementById("movies").append(img, h4, actors, recom);
+  } else {
+    document.getElementById("movies").append(img, h4, actors);
+  }
 }
 function unFound(search) {
   let h4 = document.createElement("h4");
