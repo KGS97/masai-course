@@ -3,6 +3,8 @@ document.querySelector(".btn").addEventListener("click", fulfillOrder);
 let myPromise = new Promise(function (res, rej) {
   if (x % 2 == 0) {
     res();
+  } else {
+    rej();
   }
 });
 
