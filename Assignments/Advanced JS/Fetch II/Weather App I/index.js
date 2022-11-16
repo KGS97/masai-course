@@ -1,6 +1,26 @@
+let key = "1a4a5a85110b9e302663e92d7de0dd26";
 document.getElementById("search").addEventListener("click", fetchData);
+defaultLocation();
+function defaultLocation() {
+  navigator.geolocation.getCurrentPosition(defaultUI);
+}
+function defaultUI(pos) {
+  let lat = pos.coords.latitude;
+  let long = pos.coords.longitude;
+  let myPromise =
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${key}
+`);
+
+  myPromise
+    .then((res) => {
+      return res.json();
+    })
+    .then((res) => {
+      console.log(res);
+      addData(res);
+    });
+}
 function fetchData() {
-  let key = "1a4a5a85110b9e302663e92d7de0dd26";
   let city = document.getElementById("city").value;
   let res = fetch(
     "https://api.openweathermap.org/data/2.5/weather?q=" +
@@ -16,15 +36,16 @@ function fetchData() {
       addData(res);
       console.log(res);
     });
+}
+
+function addData(res) {
+  city = res.name;
   document
     .querySelector("iframe")
     .setAttribute(
       "src",
       `https://maps.google.com/maps?q=${city}&t=&z=13&ie=UTF8&iwloc=&output=embed`
     );
-}
-
-function addData(res) {
   // let temp = k2C(roundUporDown(res.main.temp));
   let min = k2C(roundUporDown(res.main.temp_min));
   document.getElementById("min").innerText = min;
