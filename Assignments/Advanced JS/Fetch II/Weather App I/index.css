@@ -1,3 +1,6 @@
+body{
+    background-image: url('https://www.pizzahut.co.in/_next/static/static/images/app-bg.9637f025c0a8602011051ed056e61616.jpg');
+}
 *{
     margin: auto;
     text-align: center;
@@ -57,3 +60,10 @@
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         padding: 10px;
     }
+table{
+    margin: 50px auto;
+    
+}
+td{
+    padding: 5px;
+}
