@@ -51,6 +51,7 @@ function addData(results) {
           return res.json();
         })
         .then(function (jsonData) {
+          console.log(jsonData);
           td3.innerText = jsonData.Ratings[0].Value;
           td4.innerText = jsonData.Actors;
         });
@@ -58,7 +59,11 @@ function addData(results) {
       let tr = document.createElement("tr");
       let td1 = document.createElement("td");
       let poster = document.createElement("img");
-      poster.setAttribute("src", elem.Poster);
+      if (elem.Poster != "N/A") {
+        poster.setAttribute("src", elem.Poster);
+      } else {
+        poster.setAttribute("alt", elem.Poster);
+      }
       td1.append(poster);
       let td2 = document.createElement("td");
       td2.innerText = elem.Year;
