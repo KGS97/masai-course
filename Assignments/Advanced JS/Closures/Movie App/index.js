@@ -28,10 +28,12 @@ function addData(results) {
     th.innerText = "Poster";
     thead.append(th);
     let th1 = document.createElement("th");
-    th1.innerText = "Release Date";
+    th1.innerText = "Year of Release";
+    th1.setAttribute("class", "yor");
     thead.append(th1);
     let th2 = document.createElement("th");
     th2.innerText = "IMDB Rating";
+    th2.setAttribute("class", "yor");
     thead.append(th2);
     let th3 = document.createElement("th");
     th3.innerText = "Cast";
@@ -39,8 +41,31 @@ function addData(results) {
     table.append(thead);
     document.getElementById("results").append(table);
     let arr = results.Search;
+    let tbody = document.createElement("tbody");
     arr.forEach((elem) => {
-      console.log(elem);
+      let td3 = document.createElement("td");
+      let td4 = document.createElement("td4");
+      fetch(`http://www.omdbapi.com/?apikey=${key}&t=${elem.Title}
+`)
+        .then(function (res) {
+          return res.json();
+        })
+        .then(function (jsonData) {
+          td3.innerText = jsonData.Ratings[0].Value;
+          td4.innerText = jsonData.Actors;
+        });
+
+      let tr = document.createElement("tr");
+      let td1 = document.createElement("td");
+      let poster = document.createElement("img");
+      poster.setAttribute("src", elem.Poster);
+      td1.append(poster);
+      let td2 = document.createElement("td");
+      td2.innerText = elem.Year;
+
+      tr.append(td1, td2, td3, td4);
+      tbody.append(tr);
     });
+    document.querySelector("table").append(tbody);
   }
 }

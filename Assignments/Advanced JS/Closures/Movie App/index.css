@@ -1,3 +1,21 @@
 table{
     width: 100%;
+    border: 1px solid black;
+}
+tbody{
+    background-color: ghostwhite;
+}
+.yor{
+    width: 15%;
+}
+td{
+    width: 20%;
+    padding: 10px;
+    
+}
+thead{
+    background-color: cyan;
+}
+img{
+    height:200px;
 }
