@@ -6,6 +6,20 @@ nav{
     background-color: ghostwhite;
 
 }
+table{
+    width: 100%;
+    margin-bottom: 50px;
+    display: none;
+    text-align: center;
+    background-color: ghostwhite;
+    padding: 25px;
+}
+th,td{
+    padding: 10px 200px;
+}
+td{
+    cursor: pointer;
+}
 #vid-player{
 display: none;
 text-align: center;
