@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+    <title>Mini Youtube</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <nav>
+      <div id="home-btn">
+        <img
+          src="u2b-logo.png"
+          id="nav-logo"
+          alt="Youtube Logo"
+          style="cursor: pointer"
+        />
+      </div>
+      <div id="search-container">
+        <input type="text" id="search-bar" placeholder="Search" />
+        <button id="search-btn">
+          <img src="search.png" alt="" id="search-icon" />
+        </button>
+      </div>
+    </nav>
+    <div id="results"></div>
+    <div id="vid-player">
+      <iframe
+        width="853"
+        height="480"
+        title="Why You Can’t Smell Yourself (and Other Ways Your Senses Lie to You)"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <p id="vid-title"></p>
+    </div>
+  </body>
+</html>
