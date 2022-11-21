@@ -1,0 +1,36 @@
+*{
+    background-color: ghostwhite;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 25px auto;
+    
+}
+form>* {
+    height:25px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin: 5px;
+
+}
+form>input {
+    height: 40px;
+}
+table{
+
+    width: 66%;
+    margin: 50px auto;
+}
+thead{
+    background-color: blue;
+    height: 40px;
+    color: white;
+}
+tbody{
+    background-color: ghostwhite;
+    color: black;
+}

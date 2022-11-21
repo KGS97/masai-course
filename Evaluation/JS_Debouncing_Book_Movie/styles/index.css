@@ -1,0 +1,28 @@
+body{
+    text-align: center;
+    margin-top: 10px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+}
+#addMoneyNBook{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 10px auto;
+}
+#addMoneyNBook>* {
+    margin: 25px auto;
+}
+#addMoneyNBook>input {
+    width: 40%;
+    height: 30px;
+    padding: 5px 10px;
+}
+
+#book_movies{
+    color: blue;
+    text-decoration: underline;
+}
