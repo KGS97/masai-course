@@ -9,11 +9,14 @@ class Queue {
     console.log(this.q, this.len);
   }
   dq(n) {
-    for (let i = 0; i < n; i++) {
+    while (n-- > 0 && this.len > 0) {
       this.q.shift();
+      this.len--;
     }
-    this.len -= n;
     console.log(this.q, this.len);
   }
 }
+
 let q = new Queue();
+q.enq(1, 2, 3);
+q.dq(4);
