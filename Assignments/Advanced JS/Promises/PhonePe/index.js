@@ -41,14 +41,23 @@ function defaultUI() {
   if (number) input.setAttribute("placeholder", "Please enter 4 digit otp");
 }
 function NumberII(num) {
-  if (num > 999999999) {
-    loadingUI();
-    number = true;
-    setTimeout(defaultUI, 2000);
-  } else {
-    loadingUI();
-    setTimeout(tryAgain, 2000);
-  }
+  let myPromise = new Promise((res, rej) => {
+    if (num > 999999999) {
+      res();
+    } else {
+      rej();
+    }
+  });
+  myPromise
+    .then(() => {
+      loadingUI();
+      number = true;
+      setTimeout(defaultUI, 2000);
+    })
+    .catch(() => {
+      loadingUI();
+      setTimeout(tryAgain, 2000);
+    });
 }
 let otpN = false;
 function otp(num) {
@@ -86,8 +95,6 @@ function failorSucces() {
     successUI();
   }
 }
-
-function fail() {}
 
 function successUI() {
   document.getElementById("payment").innerHTML = "";
