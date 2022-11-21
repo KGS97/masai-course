@@ -11,3 +11,7 @@ function add2Wallet() {
   localStorage.setItem("amount", amount);
   showMoney();
 }
+document.getElementById("book_movies").addEventListener("click", redirect);
+function redirect() {
+  window.location.href = "movies.html";
+}
