@@ -16,21 +16,13 @@ function showMovie() {
 }
 function bookingStatus() {
   var status = document.getElementById("booking_status");
-  if (
-    document.getElementById("number_of_seats").value == "" ||
-    document.getElementById("user_name").value == ""
-  ) {
-    status.innerText = "Please enter valid credentials";
+  let seats = document.getElementById("number_of_seats").value;
+  let balance = document.getElementById("wallet").innerText * 1;
+  if (balance >= seats * 100) {
+    status.innerText = "Booking Successful!";
+    balance -= seats * 100;
+    document.getElementById("wallet").innerText = balance;
   } else {
-    let seats = document.getElementById("number_of_seats").value;
-    let name = document.getElementById("user_name").value;
-    let balance = document.getElementById("wallet").innerText * 1;
-    if (balance >= seats * 100) {
-      status.innerText = "Booking Successful!";
-      balance -= seats * 100;
-      document.getElementById("wallet").innerText = balance;
-    } else {
-      status.innerText = "Insufficient Balance!";
-    }
+    status.innerText = "Insufficient Balance!";
   }
 }
