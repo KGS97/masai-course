@@ -1,25 +1,12 @@
 let x = 3;
 document.querySelector(".btn").addEventListener("click", fulfillOrder);
-let myPromise = new Promise(function (res, rej) {
-  if (x % 2 == 0) {
-    res();
-  } else {
-    rej();
-  }
-});
 
 function fulfillOrder() {
-  setTimeout(function () {
-    x = 2;
-  }, 5000);
+  // console.log("ok");
+  let myPromise = new Promise((res, rej) => {
+    setTimeout(res, 5000);
+  });
+  myPromise.then(() => {
+    alert("Your order has been fulfilled");
+  });
 }
-
-myPromise.then(() => {
-  orderFulfilled();
-  console.log(myPromise);
-});
-function orderFulfilled() {
-  console.log("ok");
-}
-
-console.log(myPromise);
