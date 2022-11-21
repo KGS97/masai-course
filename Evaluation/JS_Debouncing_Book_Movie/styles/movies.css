@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+    margin-top: 10px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+}
+#search{
+    width: 30%;
+
+}
+#movies{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
