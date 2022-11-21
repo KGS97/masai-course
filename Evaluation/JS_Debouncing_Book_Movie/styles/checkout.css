@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+#movie{
+    display: flex;
+    flex-direction: column;
+}
+#movie>img {
+    height: 400px;
+    margin: auto;
+}
+#status{
+    height: 50px;
+    width: 100%;
+}

@@ -6,8 +6,11 @@ function showMoney() {
 
 document.getElementById("add_to_wallet").addEventListener("click", add2Wallet);
 function add2Wallet() {
-  let amount = document.getElementById("amount").value;
+  let amount =
+    document.getElementById("amount").value * 1 +
+    document.getElementById("wallet").innerText * 1;
   document.getElementById("amount").value = "";
+
   localStorage.setItem("amount", amount);
   showMoney();
 }
