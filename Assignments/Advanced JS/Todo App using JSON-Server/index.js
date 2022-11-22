@@ -1,5 +1,6 @@
 const PostUrl = "http://localhost:3000/tasks";
-reFreshData();
+reFreshData(1);
+let page = 1;
 document.getElementById("submit").addEventListener("click", () => {
   event.preventDefault();
   let val = document.getElementById("box").value;
@@ -18,15 +19,17 @@ async function sendRequest(method, url = "", data = {}) {
 
     body: JSON.stringify(data),
   });
-  reFreshData();
+  reFreshData(1);
   return response.json();
 }
-function reFreshData() {
-  fetch(PostUrl)
+function reFreshData(page) {
+  fetch(`http://localhost:3000/tasks?_page=${page}&_limit=3`)
     .then((res) => {
+      console.log(res);
       return res.json();
     })
     .then((data) => {
+      console.log(data);
       showData(data);
     });
 }
@@ -34,8 +37,11 @@ function showData(data) {
   document.querySelector("tbody").innerHTML = "";
   data.forEach((elem) => {
     let tr = document.createElement("tr");
+    let td0 = document.createElement("td");
+    td0.style.backgroundColor = "white";
     let td1 = document.createElement("td");
     td1.innerText = elem.task;
+    td1.className = "task";
     let td2 = document.createElement("td");
     if (elem.status) {
       td2.style.backgroundColor = "Green";
@@ -44,25 +50,28 @@ function showData(data) {
       td2.style.backgroundColor = "Red";
       td2.innerText = "Due";
     }
+    td2.className = "status";
     td2.addEventListener("click", tglStatus);
     td2.style.cursor = "pointer";
     let td3 = document.createElement("td");
-    td3.innerText = "Delete";
+    td3.innerText = "🗑️";
+    td3.className = "delete";
     td3.style.backgroundColor = "red";
     td3.addEventListener("click", deleteTask);
     td3.style.cursor = "pointer";
     let td4 = document.createElement("td");
     td4.innerText = elem.id;
     td4.style.display = "none";
-    tr.append(td1, td2, td3, td4);
+    tr.append(td0, td1, td2, td3, td4);
     document.querySelector("tbody").append(tr);
   });
 }
 
 function tglStatus() {
-  let id = this.parentNode.childNodes[3].innerText;
-  fetch(`${PostUrl}/${id}`, { method: "PATCH" })
+  let id = this.parentNode.childNodes[4].innerText;
+  fetch(`${PostUrl}/${id}`, { method: "GET" })
     .then((res) => {
+      console.log(res);
       return res.json();
     })
     .then((data) => {
@@ -71,7 +80,15 @@ function tglStatus() {
     });
 }
 function deleteTask() {
-  let id = this.parentNode.childNodes[3].innerText;
-  fetch(`${PostUrl}/${id}`, { method: "DELETE" }).then(() => reFreshData());
+  let id = this.parentNode.childNodes[4].innerText;
+  fetch(`${PostUrl}/${id}`, { method: "DELETE" }).then(() => reFreshData(page));
 }
 // Simple DELETE request with fetch
+document.getElementById("prev").addEventListener("click", pPage);
+document.getElementById("next").addEventListener("click", nPage);
+function pPage() {
+  console.log("prev");
+}
+function nPage() {
+  console.log("next");
+}

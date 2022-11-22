@@ -23,11 +23,29 @@ table{
     margin: 50px auto;
 }
 thead{
-    background-color: blue;
+    background-color: blueviolet;
     height: 40px;
     color: white;
 }
 tbody{
-    background-color: ghostwhite;
+    background-color: powderblue;
     color: black;
+    text-align: center;
+}
+tr{
+    height: 40px;
+}
+tbody {
+    background-color: powderblue;
+    color: black;
+    text-align: center;
+}
+.task{
+    width: 400px;
+}
+.delete{
+    width: 90px;
+}
+.status{
+    width: 150px;
 }
