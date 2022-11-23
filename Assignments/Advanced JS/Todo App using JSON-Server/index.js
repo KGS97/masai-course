@@ -30,7 +30,12 @@ function reFreshData(page) {
     })
     .then((data) => {
       console.log(data);
-      showData(data);
+      if (data.length > 0) {
+        showData(data);
+      }
+    })
+    .catch((err) => {
+      console.log(err);
     });
 }
 function showData(data) {
@@ -54,9 +59,11 @@ function showData(data) {
     td2.addEventListener("click", tglStatus);
     td2.style.cursor = "pointer";
     let td3 = document.createElement("td");
-    td3.innerText = "🗑️";
+    let img = document.createElement("img");
+    img.src = "delete.png";
+    td3.append(img);
     td3.className = "delete";
-    td3.style.backgroundColor = "powderblue";
+    td3.style.backgroundColor = "lightgray";
     td3.addEventListener("click", deleteTask);
     td3.style.cursor = "pointer";
     let td4 = document.createElement("td");
@@ -86,9 +93,13 @@ function deleteTask() {
 // Simple DELETE request with fetch
 document.getElementById("prev").addEventListener("click", pPage);
 document.getElementById("next").addEventListener("click", nPage);
+
 function pPage() {
-  console.log("prev");
+  if (page > 1) {
+    console.log(page);
+    reFreshData(--page);
+  }
 }
 function nPage() {
-  console.log("next");
+  reFreshData(++page);
 }
