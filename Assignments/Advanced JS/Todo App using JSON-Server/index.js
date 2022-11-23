@@ -56,7 +56,7 @@ function showData(data) {
     let td3 = document.createElement("td");
     td3.innerText = "🗑️";
     td3.className = "delete";
-    td3.style.backgroundColor = "red";
+    td3.style.backgroundColor = "powderblue";
     td3.addEventListener("click", deleteTask);
     td3.style.cursor = "pointer";
     let td4 = document.createElement("td");
