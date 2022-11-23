@@ -12,10 +12,10 @@ function search() {
 }
 var id;
 function debounce() {
-  if (id != undefined) {
+  if (id) {
     clearTimeout(id);
   }
-  id = setTimeout(search, 250);
+  id = setTimeout(search, 500);
 }
 
 function addData(results) {
@@ -44,7 +44,7 @@ function addData(results) {
     let tbody = document.createElement("tbody");
     arr.forEach((elem) => {
       let td3 = document.createElement("td");
-      let td4 = document.createElement("td4");
+      let td4 = document.createElement("td");
       fetch(`http://www.omdbapi.com/?apikey=${key}&t=${elem.Title}
 `)
         .then(function (res) {
