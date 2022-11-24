@@ -4,20 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/styles.css" />
     <title>Recipe of the Day</title>
   </head>
   <body>
     <div id="navbar"></div>
-    <div id="recipes">
-      <img
-        src="https://www.themealdb.com/images/media/meals/vvusxs1483907034.jpg"
-        alt="Christmas Pudding Flapjack"
-      />
-      <p>Christmas Pudding Flapjack</p>
-    </div>
+    <div id="recipe"></div>
+    <div id="ingredients"></div>
   </body>
 </html>
 <script type="module">
+  fetchData("rOTD", "https://www.themealdb.com/api/json/v1/1/random.php");
+  import fetchData from "/utils/fetchData.js";
   document.getElementById("navbar").innerHTML = navbar();
   import navbar from "/components/navbar.js";
 </script>

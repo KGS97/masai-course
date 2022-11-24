@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/styles.css" />
     <title>Document</title>
   </head>
   <body>
@@ -14,7 +15,7 @@
 
 <script type="module">
   document.getElementById("navbar").innerHTML = navbar();
-  fetchData("https://www.themealdb.com/api/json/v1/1/random.php");
+  fetchData("rando", "https://www.themealdb.com/api/json/v1/1/random.php");
   import fetchData from "/utils/fetchData.js";
   import navbar from "/components/navbar.js";
 </script>

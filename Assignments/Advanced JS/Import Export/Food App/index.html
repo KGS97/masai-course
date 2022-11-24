@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Search</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
   </head>
   <body>
     <div id="navbar"></div>
@@ -22,7 +23,7 @@
   document.getElementById("search-btn").addEventListener("click", () => {
     let search = document.getElementById("searchBox").value;
     let url = "https://www.themealdb.com/api/json/v1/1/search.php?s=" + search;
-    fetchData(url);
+    fetchData("search", url);
   });
 
   import fetchData from "./utils/fetchData.js";
