@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div id="searchbar">
+      <input type="text" id="searchBox" />
+      <button id="search-btn">Search</button>
+    </div>
+
+    <div id="recipe"></div>
+  </body>
+</html>
+
+<script type="module">
+  import navbar from "/components/navbar.js";
+  document.getElementById("search-btn").addEventListener("click", () => {
+    let search = document.getElementById("searchBox").value;
+    let url = "https://www.themealdb.com/api/json/v1/1/search.php?s=" + search;
+    fetchData(url);
+  });
+
+  import fetchData from "./utils/fetchData.js";
+  import searchWithD from "./utils/searchWithD.js";
+  document.getElementById("navbar").innerHTML = navbar();
+</script>
