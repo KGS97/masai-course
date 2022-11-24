@@ -23,6 +23,7 @@
   </body>
 </html>
 <script type="module">
+  let logIn = JSON.parse(localStorage.getItem(logIn)) || false;
   fetchData("rOTD", "https://www.themealdb.com/api/json/v1/1/random.php");
   import fetchData from "/utils/fetchData.js";
   document.getElementById("navbar").innerHTML = navbar();

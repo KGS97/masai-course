@@ -20,7 +20,7 @@ function getData(q, data) {
 function showData(title, thumbnail) {
   document.getElementById("recipe").innerHTML = "";
   let container = document.createElement("div");
-  let name = document.createElement("p");
+  let name = document.createElement("h4");
   let img = document.createElement("img");
   img.src = thumbnail;
   name.innerText = title;

@@ -29,4 +29,20 @@
   import fetchData from "./utils/fetchData.js";
   import searchWithD from "./utils/searchWithD.js";
   document.getElementById("navbar").innerHTML = navbar();
+  let logIn = JSON.parse(localStorage.getItem("logIn")) || false;
+  if (!logIn) {
+    let login = document.createElement("a");
+    login.href = "html/logIn.html";
+    let h4 = document.createElement("h4");
+    h4.innerText = "Log In";
+    login.append(h4);
+    document.getElementById("nav").append(login);
+  } else {
+    let myAccount = document.createElement("a");
+    myAccount.href = "html/myAccount.html";
+    let h4 = document.createElement("h4");
+    h4.innerText = "My Account";
+    myAccount.append(h4);
+    document.getElementById("nav").append(myAccount);
+  }
 </script>
