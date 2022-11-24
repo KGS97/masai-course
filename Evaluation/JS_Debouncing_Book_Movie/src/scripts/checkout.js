@@ -22,6 +22,7 @@ function bookingStatus() {
     status.innerText = "Booking Successful!";
     balance -= seats * 100;
     document.getElementById("wallet").innerText = balance;
+    localStorage.setItem("amount", JSON.stringify(balance));
   } else {
     status.innerText = "Insufficient Balance!";
   }
