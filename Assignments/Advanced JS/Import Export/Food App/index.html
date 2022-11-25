@@ -19,15 +19,18 @@
 </html>
 
 <script type="module">
+  //importing start
   import navbar from "/components/navbar.js";
+  import searchWithD from "./utils/searchWithD.js";
+  import fetchData from "./utils/fetchData.js";
+  //importing end
+
   document.getElementById("search-btn").addEventListener("click", () => {
     let search = document.getElementById("searchBox").value;
     let url = "https://www.themealdb.com/api/json/v1/1/search.php?s=" + search;
     fetchData("search", url);
   });
 
-  import fetchData from "./utils/fetchData.js";
-  import searchWithD from "./utils/searchWithD.js";
   document.getElementById("navbar").innerHTML = navbar();
   let logIn = JSON.parse(localStorage.getItem("logIn")) || false;
   if (!logIn) {
@@ -38,11 +41,8 @@
     login.append(h4);
     document.getElementById("nav").append(login);
   } else {
-    let myAccount = document.createElement("a");
-    myAccount.href = "html/myAccount.html";
     let h4 = document.createElement("h4");
-    h4.innerText = "My Account";
-    myAccount.append(h4);
-    document.getElementById("nav").append(myAccount);
+    h4.innerText = JSON.parse(localStorage.getItem("userName"));
+    document.getElementById("nav").append(h4);
   }
 </script>

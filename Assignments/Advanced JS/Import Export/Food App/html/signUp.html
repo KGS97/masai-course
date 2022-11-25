@@ -4,22 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log In</title>
+    <title>Signup</title>
   </head>
   <body>
     <div id="navbar"></div>
     <div id="logInForm"></div>
-    <a href="signUp.html">Sign up instead?</a>
+    <a href="logIn.html">Log in instead?</a>
   </body>
 </html>
 <script type="module">
-  //importing
   import navbar from "/components/navbar.js";
   import logInForm from "/components/userForm.js";
-  import { logIn as verifyUser } from "../utils/verifyUser.js";
+  import { signUp as verifyUser } from "../utils/verifyUser.js";
 
   document.getElementById("logInForm").innerHTML = logInForm();
   document.getElementById("navbar").innerHTML = navbar();
+
   document.getElementById("submit-btn").addEventListener("click", () => {
     let userName = document.getElementById("userName").value;
     let passWord = document.getElementById("passWord").value;
