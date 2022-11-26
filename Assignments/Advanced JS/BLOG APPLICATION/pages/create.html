@@ -4,9 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Create</title>
+    <title>Create new Blog</title>
+    <link rel="stylesheet" href="../styles/main.css" />
   </head>
   <body>
     <div id="nav"></div>
+    <input
+      type="text"
+      id="title-edit"
+      class="editor"
+      placeholder="Please enter a title"
+    />
+    <input
+      type="text"
+      id="author-edit"
+      class="editor"
+      placeholder="Please enter the author's name"
+    />
+    <input
+      type="text"
+      id="gender-edit"
+      class="editor"
+      placeholder="Please enter author's gender"
+    />
+    <textarea
+      id="body-edit"
+      cols="30"
+      rows="10"
+      class="editor"
+      placeholder="Please enter the body of the blog"
+    ></textarea>
+    <button class="editor">Create</button>
   </body>
 </html>
+<script src="create.js" type="module"></script>
