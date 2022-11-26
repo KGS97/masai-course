@@ -1,0 +1,39 @@
+nav{
+    background-color: ghostwhite;
+    margin: 0;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.editor{
+    width: 50%;
+    margin: 10px auto;
+    padding: 5px;
+
+}
+table{
+    width: 100%;
+    text-align: center;
+    border-collapse:collapse;
+}
+#gender-head,#title-head,#num-head{
+    width: 7.5%;
+}
+
+tr{
+    padding: 20px 5px;
+}
+table *{
+    border: 1px solid gray;
+}
+#options-head{
+    width: 4%;
+}
+img{
+    cursor: pointer;
+}
