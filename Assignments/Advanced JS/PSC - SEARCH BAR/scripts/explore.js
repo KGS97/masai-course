@@ -4,5 +4,6 @@ import searchWDebouncing from "../utils/searchWDebouncing.js";
 document.getElementById("navbar").innerHTML = navbar();
 document.getElementById("search").innerHTML = searchBar();
 document.getElementById("searchBar").addEventListener("input", () => {
-  searchWDebouncing(false);
+  let q = document.getElementById("searchBar").value;
+  searchWDebouncing(false, q);
 });
