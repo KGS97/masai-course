@@ -41,7 +41,9 @@ function showMovies(data) {
     button.innerText = "Book Now";
     button.className = "book_now";
     button.addEventListener("click", () => {
-      setNRed(elem.Poster, elem.Title);
+      console.log(elem.Poster);
+      console.log(elem.Title);
+      //setNRed(elem.Poster, elem.Title);
     });
     container.append(poster, title, button);
     document.getElementById("movies").append(container);
