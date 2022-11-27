@@ -11,16 +11,16 @@ function showBlogs(data) {
   document.querySelector("tbody").innerHTML = "";
 
   data.forEach((elem) => {
-    let { id, title, author, gender, body } = elem;
+    let { id, title, author, category, created_date, body } = elem;
     let tr = document.createElement("tr");
     let tid = document.createElement("td");
-    tid.textContent = id;
+    tid.textContent = created_date;
     let ttitle = document.createElement("td");
     ttitle.textContent = title;
     let tauthor = document.createElement("td");
     tauthor.textContent = author;
     let tgender = document.createElement("td");
-    tgender.textContent = gender;
+    tgender.textContent = category;
     let tbody = document.createElement("td");
     tbody.textContent = body;
     let options = document.createElement("td");

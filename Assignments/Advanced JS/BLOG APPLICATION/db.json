@@ -1,662 +1,427 @@
 {
   "blogs": [
     {
+      "id": 4,
+      "created_date": "1/24/2022",
+      "title": "Underdosing of mineralocorticoids and their antag, sequela",
+      "author": "Reider D'Aubney",
+      "category": "ligula pellentesque ultrices phasellus",
+      "body": "Underdosing of mineralocorticoids and their antagonists, sequela",
+      "tags": "Horizontal"
+    },
+    {
+      "id": 5,
+      "created_date": "3/23/2022",
+      "title": "Laceration without foreign body of elbow",
+      "author": "Haywood De Beauchemp",
+      "category": "ut mauris eget",
+      "body": "Laceration without foreign body of elbow",
+      "tags": "Pre-emptive"
+    },
+    {
+      "id": 6,
+      "created_date": "8/11/2022",
+      "title": "Posterior subluxation of left humerus, subsequent encounter",
+      "author": "Alayne Manna",
+      "category": "et ultrices posuere cubilia",
+      "body": "Posterior subluxation of left humerus, subsequent encounter",
+      "tags": "Advanced"
+    },
+    {
       "id": 7,
-      "title": "Nondisp spiral fx shaft of l fibula, 7thH",
-      "body": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
-      "author": "Philly Snowball",
-      "gender": "Female"
+      "created_date": "1/28/2022",
+      "title": "Unspecified juvenile rheumatoid arthritis, right wrist",
+      "author": "Sapphire Axell",
+      "category": "quam fringilla rhoncus mauris",
+      "body": "Unspecified juvenile rheumatoid arthritis, right wrist",
+      "tags": "adapter"
     },
     {
       "id": 8,
-      "title": "Abscess of bursa, right wrist",
-      "body": "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
-      "author": "Lucinda Wadelin",
-      "gender": "Female"
+      "created_date": "1/29/2022",
+      "title": "Vesicoureteral-reflux, unspecified",
+      "author": "Beckie Broster",
+      "category": "sed vestibulum sit amet cursus",
+      "body": "Vesicoureteral-reflux, unspecified",
+      "tags": "Reverse-engineered"
     },
     {
       "id": 9,
-      "title": "Nondisplaced spiral fracture of shaft of unspecified fibula",
-      "body": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
-      "author": "Beret Gladstone",
-      "gender": "Female"
+      "created_date": "6/4/2022",
+      "title": "Sialoadenitis, unspecified",
+      "author": "Aubrie Bartunek",
+      "category": "sagittis dui vel",
+      "body": "Sialoadenitis, unspecified",
+      "tags": "challenge"
     },
     {
       "id": 10,
-      "title": "I/I react d/t other urinary catheter, subsequent encounter",
-      "body": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
-      "author": "Tressa Cotte",
-      "gender": "Female"
+      "created_date": "6/25/2022",
+      "title": "Rider of nonpowered watercraft struck by other watercraft",
+      "author": "Rowe Swannick",
+      "category": "donec diam neque vestibulum eget",
+      "body": "Rider of nonpowered watercraft struck by other watercraft",
+      "tags": "product"
     },
     {
       "id": 11,
-      "title": "Helicopter crash injuring occupant",
-      "body": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-      "author": "Florrie Berrill",
-      "gender": "Non-binary"
+      "created_date": "12/27/2021",
+      "title": "Pnctr w fb of unsp front wall of thrx w penet thor cav, subs",
+      "author": "Duffie Shurman",
+      "category": "in faucibus orci",
+      "body": "Puncture wound with foreign body of unspecified front wall of thorax with penetration into thoracic cavity, subsequent encounter",
+      "tags": "infrastructure"
     },
     {
       "id": 12,
-      "title": "Nontraumatic compartment syndrome of abdomen",
-      "body": "Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
-      "author": "Doretta Lippett",
-      "gender": "Female"
+      "created_date": "9/6/2022",
+      "title": "Unsp fx shaft of unsp rad, 7thH",
+      "author": "Patric Wren",
+      "category": "etiam pretium iaculis",
+      "body": "Unspecified fracture of shaft of unspecified radius, subsequent encounter for open fracture type I or II with delayed healing",
+      "tags": "Cross-platform"
     },
     {
       "id": 13,
-      "title": "Poisn by oth prim sys and hematolog agents, assault, init",
-      "body": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-      "author": "Kimbra Deppe",
-      "gender": "Female"
+      "created_date": "11/28/2021",
+      "title": "Complete traumatic amp of unsp shldr/up arm, level unsp",
+      "author": "Sanders Ghirigori",
+      "category": "nulla pede ullamcorper augue",
+      "body": "Complete traumatic amputation of unspecified shoulder and upper arm, level unspecified",
+      "tags": "encryption"
     },
     {
       "id": 14,
-      "title": "Renal hypoplasia, unspecified",
-      "body": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
-      "author": "Dani O' Timony",
-      "gender": "Female"
+      "created_date": "10/29/2022",
+      "title": "Person outside special agri vehicle injured nontraf, sequela",
+      "author": "Kaylil Muneely",
+      "category": "duis bibendum morbi non quam",
+      "body": "Person on outside of special agricultural vehicle injured in nontraffic accident, sequela",
+      "tags": "executive"
     },
     {
       "id": 15,
-      "title": "Struck by crocodile, initial encounter",
-      "body": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.",
-      "author": "Ingeberg Douce",
-      "gender": "Female"
+      "created_date": "1/17/2022",
+      "title": "Inj muscle, fascia and tendon of prt biceps, unsp arm, subs",
+      "author": "Arvie Gullivan",
+      "category": "massa tempor convallis nulla neque",
+      "body": "Other injury of muscle, fascia and tendon of other parts of biceps, unspecified arm, subsequent encounter",
+      "tags": "Visionary"
     },
     {
       "id": 16,
-      "title": "Extrn constrict of unsp external genital organs, male, subs",
-      "body": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.",
-      "author": "Townsend Troutbeck",
-      "gender": "Male"
+      "created_date": "12/19/2021",
+      "title": "Maternal care for Anti-A sensitization, second tri, fetus 2",
+      "author": "Juline Hammonds",
+      "category": "nunc commodo placerat praesent",
+      "body": "Maternal care for Anti-A sensitization, second trimester, fetus 2",
+      "tags": "Organic"
     },
     {
       "id": 17,
-      "title": "Burn of second degree of left ankle, subsequent encounter",
-      "body": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
-      "author": "Opalina Drivers",
-      "gender": "Genderfluid"
+      "created_date": "8/16/2022",
+      "title": "Dislocation of MCP joint of left thumb, sequela",
+      "author": "Rozanna Harlow",
+      "category": "quam suspendisse potenti nullam",
+      "body": "Dislocation of metacarpophalangeal joint of left thumb, sequela",
+      "tags": "Re-engineered"
     },
     {
       "id": 18,
-      "title": "Pasngr in pk-up/van injured in clsn w ped/anml nontraf, init",
-      "body": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
-      "author": "Scotti Minchindon",
-      "gender": "Male"
+      "created_date": "5/21/2022",
+      "title": "Complete loss of teeth due to periodontal diseases, class I",
+      "author": "Shea Mannooch",
+      "category": "risus praesent lectus",
+      "body": "Complete loss of teeth due to periodontal diseases, class I",
+      "tags": "logistical"
     },
     {
       "id": 19,
-      "title": "Sepsis of newborn due to Escherichia coli",
-      "body": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
-      "author": "Langsdon Scarff",
-      "gender": "Male"
+      "created_date": "10/27/2022",
+      "title": "Lacerat flexor musc/fasc/tend left thumb at forarm lv, subs",
+      "author": "Jefferey Lightowler",
+      "category": "ligula suspendisse ornare consequat lectus",
+      "body": "Laceration of flexor muscle, fascia and tendon of left thumb at forearm level, subsequent encounter",
+      "tags": "application"
     },
     {
       "id": 20,
-      "title": "Other injury of bronchus",
-      "body": "Sed ante. Vivamus tortor. Duis mattis egestas metus.",
-      "author": "Beverlee Onge",
-      "gender": "Female"
+      "created_date": "12/9/2021",
+      "title": "Other specified air transport accidents",
+      "author": "Adorne Germon",
+      "category": "sapien in sapien iaculis congue",
+      "body": "Other specified air transport accidents",
+      "tags": "non-volatile"
     },
     {
       "id": 21,
-      "title": "Vis def/sptl nglct following other ntrm intcrn hemorrhage",
-      "body": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
-      "author": "Glyn Beynon",
-      "gender": "Female"
+      "created_date": "9/23/2022",
+      "title": "Oth fx upr & low end unsp fibula, 7thM",
+      "author": "Roseline Morigan",
+      "category": "ultrices mattis odio donec",
+      "body": "Other fracture of upper and lower end of unspecified fibula, subsequent encounter for open fracture type I or II with nonunion",
+      "tags": "content-based"
     },
     {
       "id": 22,
-      "title": "Displ transverse fx shaft of l femr, 7thM",
-      "body": "Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
-      "author": "Rossy Alanbrooke",
-      "gender": "Male"
+      "created_date": "11/4/2022",
+      "title": "Otalgia",
+      "author": "Lida Campion",
+      "category": "nulla sed vel",
+      "body": "Otalgia",
+      "tags": "Versatile"
     },
     {
       "id": 23,
-      "title": "Corrosion of second degree of left toe(s) (nail)",
-      "body": "In congue. Etiam justo. Etiam pretium iaculis justo.",
-      "author": "Bear Meran",
-      "gender": "Male"
+      "created_date": "12/12/2021",
+      "title": "Overexertion from prolonged static or awkward postures",
+      "author": "Gaven Ronci",
+      "category": "id nisl venenatis",
+      "body": "Overexertion from prolonged static or awkward postures",
+      "tags": "Synchronised"
     },
     {
       "id": 24,
-      "title": "Mechanical complication of graft of urinary organ",
-      "body": "Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
-      "author": "Enriqueta Roo",
-      "gender": "Female"
+      "created_date": "1/3/2022",
+      "title": "Phlbts and thombophlb of unsp deep vessels of l low extrem",
+      "author": "Honoria D'Agostino",
+      "category": "porttitor pede justo eu",
+      "body": "Phlebitis and thrombophlebitis of unspecified deep vessels of left lower extremity",
+      "tags": "6th generation"
     },
     {
       "id": 25,
-      "title": "Fatigue fx vert, cervicothor rgn, subs for fx w delay heal",
-      "body": "Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.",
-      "author": "Xylina Tankard",
-      "gender": "Bigender"
+      "created_date": "4/28/2022",
+      "title": "Nondisp fx of hook process of hamate bone, l wrist, sequela",
+      "author": "Kahaleel O' Bee",
+      "category": "vulputate vitae nisl",
+      "body": "Nondisplaced fracture of hook process of hamate [unciform] bone, left wrist, sequela",
+      "tags": "Virtual"
     },
     {
       "id": 26,
-      "title": "Nondisp oblique fx shaft of humer, l arm, 7thG",
-      "body": "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
-      "author": "Bren Gwilym",
-      "gender": "Male"
+      "created_date": "5/4/2022",
+      "title": "Unsp injury of intercostal blood vessels, unsp side, init",
+      "author": "Berton Cogswell",
+      "category": "ipsum integer a nibh",
+      "body": "Unspecified injury of intercostal blood vessels, unspecified side, initial encounter",
+      "tags": "open architecture"
     },
     {
       "id": 27,
-      "title": "Drown due to fall/jump fr burning passenger ship, init",
-      "body": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
-      "author": "Clarance Courtois",
-      "gender": "Male"
+      "created_date": "7/21/2022",
+      "title": "Cyanosis",
+      "author": "Udale Bazek",
+      "category": "elit proin risus praesent lectus",
+      "body": "Cyanosis",
+      "tags": "Reactive"
     },
     {
       "id": 28,
-      "title": "Vascular comp fol infusn, tranfs and theraputc inject, init",
-      "body": "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
-      "author": "Gradey Coatman",
-      "gender": "Male"
+      "created_date": "5/7/2022",
+      "title": "Fracture of orbital floor, left side, 7thB",
+      "author": "Sidonnie Griffiths",
+      "category": "habitasse platea dictumst",
+      "body": "Fracture of orbital floor, left side, initial encounter for open fracture",
+      "tags": "ability"
     },
     {
       "id": 29,
-      "title": "Laceration w foreign body of unsp cheek and TMJ area",
-      "body": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
-      "author": "Ludvig MacMickan",
-      "gender": "Male"
+      "created_date": "5/31/2022",
+      "title": "Nondisp fx of med condyle of l humer, 7thD",
+      "author": "Dulcia Fitchett",
+      "category": "auctor gravida sem praesent id",
+      "body": "Nondisplaced fracture of medial condyle of left humerus, subsequent encounter for fracture with routine healing",
+      "tags": "attitude-oriented"
     },
     {
       "id": 30,
-      "title": "Other sprain of sternum, sequela",
-      "body": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
-      "author": "Aleksandr Barczynski",
-      "gender": "Male"
+      "created_date": "1/13/2022",
+      "title": "Lacerat extensor musc/fasc/tend finger at wrs/hnd lv, init",
+      "author": "Madelin Beccero",
+      "category": "eget eros elementum",
+      "body": "Laceration of extensor muscle, fascia and tendon of other finger at wrist and hand level, initial encounter",
+      "tags": "executive"
     },
     {
       "id": 31,
-      "title": "Injury of trochlear nerve, unspecified side, init encntr",
-      "body": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
-      "author": "Thadeus Toman",
-      "gender": "Male"
+      "created_date": "6/6/2022",
+      "title": "Encounter for screening for metabolic disorder",
+      "author": "Giraldo Isgate",
+      "category": "mattis odio donec vitae nisi",
+      "body": "Encounter for screening for metabolic disorder",
+      "tags": "24 hour"
     },
     {
       "id": 32,
-      "title": "Myositis ossificans progressiva, right upper arm",
-      "body": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
-      "author": "Eliot McGoon",
-      "gender": "Male"
+      "created_date": "6/27/2022",
+      "title": "Laceration of adrenal gland, sequela",
+      "author": "Nannie Sallings",
+      "category": "risus auctor sed tristique in",
+      "body": "Laceration of adrenal gland, sequela",
+      "tags": "zero tolerance"
     },
     {
       "id": 33,
-      "title": "Other specified carcinomas of liver",
-      "body": "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
-      "author": "Corrie Porte",
-      "gender": "Male"
+      "created_date": "5/25/2022",
+      "title": "Inj cutan sensory nerve at ank/ft level, right leg, sequela",
+      "author": "Tallie Fearnehough",
+      "category": "dis parturient montes nascetur",
+      "body": "Injury of cutaneous sensory nerve at ankle and foot level, right leg, sequela",
+      "tags": "Open-source"
     },
     {
       "id": 34,
-      "title": "Diab with moderate nonp rtnop with macular edema, left eye",
-      "body": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-      "author": "Hanan Fourman",
-      "gender": "Male"
+      "created_date": "10/8/2022",
+      "title": "Displ transverse fx shaft of r tibia, 7thB",
+      "author": "Herculie Dockree",
+      "category": "sed tincidunt eu",
+      "body": "Displaced transverse fracture of shaft of right tibia, initial encounter for open fracture type I or II",
+      "tags": "maximized"
     },
     {
       "id": 35,
-      "title": "Pneumococcal arthritis, shoulder",
-      "body": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
-      "author": "Cristi McGuinley",
-      "gender": "Female"
+      "created_date": "9/12/2022",
+      "title": "Forced landing of hang-glider injuring occupant, subs encntr",
+      "author": "Emogene Kelling",
+      "category": "augue quam sollicitudin",
+      "body": "Forced landing of hang-glider injuring occupant, subsequent encounter",
+      "tags": "moderator"
     },
     {
       "id": 36,
-      "title": "Encntr for surgical aftcr fol surgery on the skin, subcu",
-      "body": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.",
-      "author": "Maxim Courtois",
-      "gender": "Male"
+      "created_date": "9/16/2022",
+      "title": "Burn of third degree of right wrist, sequela",
+      "author": "Shelby Jeves",
+      "category": "facilisi cras non velit nec",
+      "body": "Burn of third degree of right wrist, sequela",
+      "tags": "budgetary management"
     },
     {
       "id": 37,
-      "title": "Glaucoma secondary to other eye disorders, unspecified eye",
-      "body": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.",
-      "author": "Annecorinne Biaggioli",
-      "gender": "Female"
+      "created_date": "2/26/2022",
+      "title": "Other ovarian cyst, left side",
+      "author": "Mariann Tanby",
+      "category": "nunc donec quis orci",
+      "body": "Other ovarian cyst, left side",
+      "tags": "client-server"
     },
     {
       "id": 38,
-      "title": "Maternal care for damage to fetus by drugs, fetus 5",
-      "body": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.",
-      "author": "Clayson Siddall",
-      "gender": "Male"
+      "created_date": "6/20/2022",
+      "title": "Nondisp fx of unsp radial styloid pro, 7thD",
+      "author": "Uriah Fike",
+      "category": "nunc nisl duis bibendum",
+      "body": "Nondisplaced fracture of unspecified radial styloid process, subsequent encounter for closed fracture with routine healing",
+      "tags": "paradigm"
     },
     {
       "id": 39,
-      "title": "Abnormal ultrasonic finding on antenatal screening of mother",
-      "body": "Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
-      "author": "Con Gerlack",
-      "gender": "Male"
+      "created_date": "7/29/2022",
+      "title": "Nondisp commnt fx l patella, 7thF",
+      "author": "Leonidas Eagell",
+      "category": "volutpat eleifend donec ut dolor",
+      "body": "Nondisplaced comminuted fracture of left patella, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with routine healing",
+      "tags": "firmware"
     },
     {
       "id": 40,
-      "title": "Nondisp transverse fx shaft of l fibula, 7thM",
-      "body": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
-      "author": "Corette Dragoe",
-      "gender": "Female"
+      "created_date": "6/7/2022",
+      "title": "Assault by other bodily force, sequela",
+      "author": "Riane McDermid",
+      "category": "aliquet at feugiat non",
+      "body": "Assault by other bodily force, sequela",
+      "tags": "Integrated"
     },
     {
       "id": 41,
-      "title": "Unspecified sprain of left hip",
-      "body": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
-      "author": "Tamarra Simonson",
-      "gender": "Female"
+      "created_date": "3/8/2022",
+      "title": "Unsp fx shaft of r ulna, 7thE",
+      "author": "Elijah Casella",
+      "category": "sagittis dui vel nisl duis",
+      "body": "Unspecified fracture of shaft of right ulna, subsequent encounter for open fracture type I or II with routine healing",
+      "tags": "Stand-alone"
     },
     {
       "id": 42,
-      "title": "Disp fx of lateral condyle of l tibia, 7thH",
-      "body": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
-      "author": "Gustaf Riddiford",
-      "gender": "Male"
+      "created_date": "8/25/2022",
+      "title": "Dislocation of proximal interphalangeal joint of thmb, subs",
+      "author": "Alethea Dering",
+      "category": "sapien placerat ante nulla",
+      "body": "Dislocation of proximal interphalangeal joint of unspecified thumb, subsequent encounter",
+      "tags": "Decentralized"
     },
     {
       "id": 43,
-      "title": "Struck by other hoof stock, initial encounter",
-      "body": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
-      "author": "Raina Readshall",
-      "gender": "Female"
+      "created_date": "11/28/2021",
+      "title": "Injury of accessory nerve, unspecified side, init encntr",
+      "author": "Alessandra Rainon",
+      "category": "lobortis vel dapibus at diam",
+      "body": "Injury of accessory nerve, unspecified side, initial encounter",
+      "tags": "architecture"
     },
     {
       "id": 44,
-      "title": "Nightmare disorder",
-      "body": "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
-      "author": "Clark Skews",
-      "gender": "Male"
+      "created_date": "11/4/2022",
+      "title": "Toxic effect of nitrogen oxides, self-harm, sequela",
+      "author": "Olivie Dilloway",
+      "category": "at vulputate vitae nisl",
+      "body": "Toxic effect of nitrogen oxides, intentional self-harm, sequela",
+      "tags": "empowering"
     },
     {
       "id": 45,
-      "title": "Poisoning by drugs affecting uric acid metabolism, assault",
-      "body": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.",
-      "author": "Merilyn Lowing",
-      "gender": "Female"
+      "created_date": "7/3/2022",
+      "title": "Abscess of bursa, right hip",
+      "author": "Madella McCullen",
+      "category": "et ultrices posuere cubilia curae",
+      "body": "Abscess of bursa, right hip",
+      "tags": "Managed"
     },
     {
       "id": 46,
-      "title": "Abscess of bursa, right hand",
-      "body": "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
-      "author": "Joela Cousin",
-      "gender": "Polygender"
+      "created_date": "10/16/2022",
+      "title": "Chronic gout due to renal impairment, left wrist, w tophus",
+      "author": "Fergus Godney",
+      "category": "morbi vel lectus in",
+      "body": "Chronic gout due to renal impairment, left wrist, with tophus (tophi)",
+      "tags": "concept"
     },
     {
       "id": 47,
-      "title": "Laceration w/o fb of right thumb w/o damage to nail, sequela",
-      "body": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.",
-      "author": "Mollee Haswell",
-      "gender": "Female"
+      "created_date": "9/26/2022",
+      "title": "Intentional self-harm by drown in natural water, subs",
+      "author": "Jermaine Fenty",
+      "category": "odio donec vitae nisi",
+      "body": "Intentional self-harm by drowning and submersion in natural water, subsequent encounter",
+      "tags": "neural-net"
     },
     {
       "id": 48,
-      "title": "Disp fx of hook process of hamate bone, left wrist",
-      "body": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
-      "author": "Jacquelyn Allanby",
-      "gender": "Female"
+      "created_date": "2/3/2022",
+      "title": "Poisoning by diagnostic agents, assault, initial encounter",
+      "author": "Schuyler Kirlin",
+      "category": "nulla nisl nunc",
+      "body": "Poisoning by diagnostic agents, assault, initial encounter",
+      "tags": "encompassing"
     },
     {
       "id": 49,
-      "title": "Nondisp fx of base of 5th MC bone, r hand, 7thD",
-      "body": "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
-      "author": "Byron Figgess",
-      "gender": "Male"
+      "created_date": "10/1/2022",
+      "title": "Contact with and (suspected) exposure to arsenic",
+      "author": "Leonelle Murkin",
+      "category": "ultrices posuere cubilia curae nulla",
+      "body": "Contact with and (suspected) exposure to arsenic",
+      "tags": "Profound"
     },
     {
       "id": 50,
-      "title": "Postimmunization arthropathy",
-      "body": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
-      "author": "Herby Babinski",
-      "gender": "Male"
-    },
-    {
-      "id": 51,
-      "title": "Blister (nonthermal) of left index finger, initial encounter",
-      "body": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.",
-      "author": "Granny Mains",
-      "gender": "Male"
-    },
-    {
-      "id": 52,
-      "title": "Nondisp fx of greater tuberosity of l humer, 7thK",
-      "body": "In congue. Etiam justo. Etiam pretium iaculis justo.",
-      "author": "Jessie Rubery",
-      "gender": "Female"
-    },
-    {
-      "id": 53,
-      "title": "Adverse effect of unsp sys anti-infect and antiparasitic",
-      "body": "Fusce consequat. Nulla nisl. Nunc nisl.",
-      "author": "Melloney Gomes",
-      "gender": "Genderfluid"
-    },
-    {
-      "id": 54,
-      "title": "Encounter for examination for insurance purposes",
-      "body": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.",
-      "author": "Vincenty Leroy",
-      "gender": "Male"
-    },
-    {
-      "id": 55,
-      "title": "Complete traumatic trnsphal amp of l little finger, init",
-      "body": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
-      "author": "Dorine Soame",
-      "gender": "Female"
-    },
-    {
-      "id": 56,
-      "title": "Contracture of muscle, unspecified shoulder",
-      "body": "Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
-      "author": "Doe Jolly",
-      "gender": "Female"
-    },
-    {
-      "id": 57,
-      "title": "Explosion on board sailboat, initial encounter",
-      "body": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
-      "author": "Wildon Welbrock",
-      "gender": "Male"
-    },
-    {
-      "id": 58,
-      "title": "Mech compl of internal fixation device of unsp bone of limb",
-      "body": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
-      "author": "Kelcey Dobel",
-      "gender": "Female"
-    },
-    {
-      "id": 59,
-      "title": "Underdosing of diagnostic agents, subsequent encounter",
-      "body": "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
-      "author": "Ibrahim Draysay",
-      "gender": "Male"
-    },
-    {
-      "id": 60,
-      "title": "Nondisp transverse fx shaft of l ulna, 7thM",
-      "body": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
-      "author": "Joshua Blogg",
-      "gender": "Male"
-    },
-    {
-      "id": 61,
-      "title": "Maternal care for oth fetal abnormality and damage, fetus 3",
-      "body": "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
-      "author": "Margret Pavis",
-      "gender": "Female"
-    },
-    {
-      "id": 62,
-      "title": "Unsp open wound of unsp external genital organs, male, subs",
-      "body": "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
-      "author": "Winfield GiacobbiniJacob",
-      "gender": "Male"
-    },
-    {
-      "id": 63,
-      "title": "Intentional self-harm by machine gun discharge, subs encntr",
-      "body": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
-      "author": "Anderea Litster",
-      "gender": "Female"
-    },
-    {
-      "id": 64,
-      "title": "Diphtheritic tubulo-interstitial nephropathy",
-      "body": "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
-      "author": "Hilliary Bownas",
-      "gender": "Female"
-    },
-    {
-      "id": 65,
-      "title": "Congenital dislocation of unspecified hip, unilateral",
-      "body": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.",
-      "author": "Lorraine Rosendale",
-      "gender": "Female"
-    },
-    {
-      "id": 66,
-      "title": "Displaced segmental fracture of shaft of unsp tibia, init",
-      "body": "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
-      "author": "Margareta Sissland",
-      "gender": "Female"
-    },
-    {
-      "id": 67,
-      "title": "Unspecified injury of adrenal gland",
-      "body": "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
-      "author": "Sindee Ronan",
-      "gender": "Female"
-    },
-    {
-      "id": 68,
-      "title": "Displaced fracture of pisiform, right wrist, sequela",
-      "body": "In congue. Etiam justo. Etiam pretium iaculis justo.",
-      "author": "Olympe Rembrandt",
-      "gender": "Female"
-    },
-    {
-      "id": 69,
-      "title": "Sideropenic dysphagia",
-      "body": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
-      "author": "Tiena Binley",
-      "gender": "Female"
-    },
-    {
-      "id": 70,
-      "title": "Burn of 2nd deg mul fingers (nail), not including thumb",
-      "body": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.",
-      "author": "Araldo MacTrustie",
-      "gender": "Male"
-    },
-    {
-      "id": 71,
-      "title": "Unsp nondisp fx of surg neck of l humerus, init for opn fx",
-      "body": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
-      "author": "Wain Wapple",
-      "gender": "Male"
-    },
-    {
-      "id": 72,
-      "title": "Sltr-haris Type IV physeal fx right metatarsal, 7thK",
-      "body": "Fusce consequat. Nulla nisl. Nunc nisl.",
-      "author": "Aluino Bank",
-      "gender": "Male"
-    },
-    {
-      "id": 73,
-      "title": "Nondisp commnt fx unsp patella, 7thF",
-      "body": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
-      "author": "Leopold Phythien",
-      "gender": "Male"
-    },
-    {
-      "id": 74,
-      "title": "Unspecified injury of plantar artery of unspecified foot",
-      "body": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-      "author": "Janene Weatherall",
-      "gender": "Female"
-    },
-    {
-      "id": 75,
-      "title": "Other internal derangements of right knee",
-      "body": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.",
-      "author": "Conney Boulding",
-      "gender": "Male"
-    },
-    {
-      "id": 76,
-      "title": "Nondisp subtrochnt fx r femr, 7thR",
-      "body": "In congue. Etiam justo. Etiam pretium iaculis justo.",
-      "author": "Candide Morena",
-      "gender": "Female"
-    },
-    {
-      "id": 77,
-      "title": "Unsp superficial injury of unsp upper arm, init encntr",
-      "body": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
-      "author": "Candi Cambell",
-      "gender": "Female"
-    },
-    {
-      "id": 78,
-      "title": "Medial disloc of proximal end of tibia, left knee, sequela",
-      "body": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
-      "author": "Karry Stukings",
-      "gender": "Female"
-    },
-    {
-      "id": 79,
-      "title": "Car driver injured in collision w SUV nontraf, init",
-      "body": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
-      "author": "Gisella Adlard",
-      "gender": "Female"
-    },
-    {
-      "id": 80,
-      "title": "Unsp physl fx low end humer, unsp arm, 7thP",
-      "body": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.",
-      "author": "Adelind Crasswell",
-      "gender": "Female"
-    },
-    {
-      "id": 81,
-      "title": "Cannabis use, unspecified with psychotic disorder",
-      "body": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
-      "author": "Kinsley Satterthwaite",
-      "gender": "Male"
-    },
-    {
-      "id": 82,
-      "title": "Burn unsp deg mult sites of r shldr/up lmb, ex wrs/hnd, init",
-      "body": "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
-      "author": "Phylis Andor",
-      "gender": "Female"
-    },
-    {
-      "id": 83,
-      "title": "Corrosion of second degree of right ankle and foot, sequela",
-      "body": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
-      "author": "Cherish Lashmar",
-      "gender": "Female"
-    },
-    {
-      "id": 84,
-      "title": "Traum hemor left cerebrum w LOC of 1-5 hrs 59 minutes, subs",
-      "body": "Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
-      "author": "Vida Thoma",
-      "gender": "Female"
-    },
-    {
-      "id": 85,
-      "title": "Disp fx of body of hamate bone, unsp wrs, 7thG",
-      "body": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
-      "author": "Mollee Strongman",
-      "gender": "Female"
-    },
-    {
-      "id": 86,
-      "title": "Superficial foreign body of penis",
-      "body": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
-      "author": "Hyacinth Keave",
-      "gender": "Female"
-    },
-    {
-      "id": 87,
-      "title": "Car passenger injured in collision w ped/anml nontraf, subs",
-      "body": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
-      "author": "Aube Osmond",
-      "gender": "Male"
-    },
-    {
-      "id": 88,
-      "title": "Anaphylactic reaction due to oth food products, subs encntr",
-      "body": "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
-      "author": "Erastus Whitehead",
-      "gender": "Male"
-    },
-    {
-      "id": 89,
-      "title": "Other infective (teno)synovitis",
-      "body": "Phasellus in felis. Donec semper sapien a libero. Nam dui.",
-      "author": "Ethelred Retchless",
-      "gender": "Male"
-    },
-    {
-      "id": 90,
-      "title": "Oth physeal fracture of lower end of ulna, left arm, sequela",
-      "body": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
-      "author": "Neala Sabban",
-      "gender": "Female"
-    },
-    {
-      "id": 91,
-      "title": "Mantle cell lymphoma, lymph nodes of multiple sites",
-      "body": "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
-      "author": "Elladine Skarman",
-      "gender": "Female"
-    },
-    {
-      "id": 92,
-      "title": "Superficial foreign body of left ring finger, subs encntr",
-      "body": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
-      "author": "Flinn Gillett",
-      "gender": "Male"
-    },
-    {
-      "id": 93,
-      "title": "Unsp athscl native arteries of extremities, right leg",
-      "body": "Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
-      "author": "Farrel Cicerone",
-      "gender": "Polygender"
-    },
-    {
-      "id": 94,
-      "title": "Burn of third degree of back of right hand, sequela",
-      "body": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.",
-      "author": "Sissy Quenell",
-      "gender": "Female"
-    },
-    {
-      "id": 95,
-      "title": "Other superficial bite of left index finger, sequela",
-      "body": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-      "author": "Ekaterina Nisby",
-      "gender": "Female"
-    },
-    {
-      "id": 96,
-      "title": "Secondary noninfectious iridocyclitis, bilateral",
-      "body": "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
-      "author": "Marris Vedstra",
-      "gender": "Female"
-    },
-    {
-      "id": 97,
-      "title": "Corros third degree of head, face, and neck, unsp site, sqla",
-      "body": "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
-      "author": "Wheeler Bampton",
-      "gender": "Male"
-    },
-    {
-      "id": 98,
-      "title": "Postimmunization arthropathy, unspecified elbow",
-      "body": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
-      "author": "Gisela Becarra",
-      "gender": "Female"
-    },
-    {
-      "id": 99,
-      "title": "Injury of radial nerve at upper arm level, left arm, subs",
-      "body": "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
-      "author": "Keelby Bergeon",
-      "gender": "Male"
-    },
-    {
-      "id": 100,
-      "title": "Unsp disorder of middle ear and mastoid, unspecified ear",
-      "body": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.",
-      "author": "Ermina Lansdale",
-      "gender": "Female"
+      "created_date": "8/9/2022",
+      "title": "Disp fx of unsp ulna styloid pro, 7thP",
+      "author": "Martica Tittletross",
+      "category": "enim lorem ipsum dolor",
+      "body": "Displaced fracture of unspecified ulna styloid process, subsequent encounter for closed fracture with malunion",
+      "tags": "Proactive"
     }
   ]
 }
