@@ -1,27 +1,6 @@
 {
   "blogs": [
     {
-      "title": "nok",
-      "body": "Halal",
-      "author": "oy vey",
-      "gender": "Sol Invictus",
-      "id": 4
-    },
-    {
-      "id": 5,
-      "title": "Underdosing of caffeine",
-      "body": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
-      "author": "Arel Sellors",
-      "gender": "Polygender"
-    },
-    {
-      "id": 6,
-      "title": "Other bursal cyst",
-      "body": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
-      "author": "Lyndel Gurner",
-      "gender": "Female"
-    },
-    {
       "id": 7,
       "title": "Nondisp spiral fx shaft of l fibula, 7thH",
       "body": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
