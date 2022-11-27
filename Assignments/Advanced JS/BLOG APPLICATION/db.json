@@ -1,24 +1,6 @@
 {
   "blogs": [
     {
-      "id": 4,
-      "created_date": "1/24/2022",
-      "title": "Underdosing of mineralocorticoids and their antag, sequela",
-      "author": "Reider D'Aubney",
-      "category": "ligula pellentesque ultrices phasellus",
-      "body": "Underdosing of mineralocorticoids and their antagonists, sequela",
-      "tags": "Horizontal"
-    },
-    {
-      "id": 5,
-      "created_date": "3/23/2022",
-      "title": "Laceration without foreign body of elbow",
-      "author": "Haywood De Beauchemp",
-      "category": "ut mauris eget",
-      "body": "Laceration without foreign body of elbow",
-      "tags": "Pre-emptive"
-    },
-    {
       "id": 6,
       "created_date": "8/11/2022",
       "title": "Posterior subluxation of left humerus, subsequent encounter",
