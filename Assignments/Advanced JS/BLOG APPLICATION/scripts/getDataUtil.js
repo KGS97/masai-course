@@ -1,4 +1,4 @@
-export default function getData() {
+export function getData() {
   fetch("http://localhost:3000/blogs")
     .then((res) => {
       return res.json();
@@ -7,7 +7,8 @@ export default function getData() {
       showBlogs(data);
     });
 }
-function showBlogs(data) {
+export default function () {}
+export function showBlogs(data) {
   document.querySelector("tbody").innerHTML = "";
 
   data.forEach((elem) => {
