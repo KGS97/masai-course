@@ -19,7 +19,7 @@ const getIngredientData = async () => {
     data = await data.json();
     console.log(data);
   } catch (err) {
-    console.log("something went wrong");
+    console.log(err);
   }
   // code here
 };
