@@ -6,8 +6,8 @@ const getCategoriesData = async () => {
   try {
     data = await data.json();
     console.log(data);
-  } catch {
-    console.log("something went wrong");
+  } catch (err) {
+    console.log(err);
   }
 };
 
@@ -18,8 +18,8 @@ const getIngredientData = async () => {
   try {
     data = await data.json();
     console.log(data);
-  } catch {
-    console.log("something went wrong");
+  } catch (err) {
+    console.log(err);
   }
   // code here
 };
