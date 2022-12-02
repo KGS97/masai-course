@@ -7,7 +7,7 @@ const getCategoriesData = async () => {
     data = await data.json();
     console.log(data);
   } catch (err) {
-    console.log(err);
+    console.log("something went wrong");
   }
 };
 
@@ -19,7 +19,7 @@ const getIngredientData = async () => {
     data = await data.json();
     console.log(data);
   } catch (err) {
-    console.log(err);
+    console.log("something went wrong");
   }
   // code here
 };
@@ -29,7 +29,7 @@ window.onload = function () {
   document.querySelector("section").innerHTML = `<button id="get-category-data">
         Get Category Data
       </button>
-      <button id="get-ingredient-data" onclick="getIngredientData()">
+      <button id="get-ingredient-data">
         Get Ingredient Data
       </button>`;
   document
@@ -37,7 +37,7 @@ window.onload = function () {
     .addEventListener("click", getCategoriesData);
   document
     .getElementById("get-ingredient-data")
-    .addEventListener("click", getCategoriesData);
+    .addEventListener("click", getIngredientData);
 };
 
 // donot chnage the export statement
