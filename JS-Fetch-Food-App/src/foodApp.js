@@ -26,6 +26,14 @@ const getIngredientData = async () => {
 
 window.onload = function () {
   //  get the buttons here and add click event
+  document.querySelector(
+    "section"
+  ).innerHTML = `<button id="get-category-data" onclick="getCategoriesData()">
+        Get Category Data
+      </button>
+      <button id="get-ingredient-data" onclick="getIngredientData()">
+        Get Ingredient Data
+      </button>`;
 };
 
 // donot chnage the export statement
