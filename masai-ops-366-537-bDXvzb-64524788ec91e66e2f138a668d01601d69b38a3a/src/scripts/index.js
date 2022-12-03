@@ -20,7 +20,7 @@ async function showData(page, loaded) {
   let data = await fetch(
     `https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-products/?limit=6&page=${page}`
   );
-
+  document.getElementById("page_number").innerText = page;
   data = await data.json();
   totalPages = data.totalPages;
   data = loaded || data.data;
