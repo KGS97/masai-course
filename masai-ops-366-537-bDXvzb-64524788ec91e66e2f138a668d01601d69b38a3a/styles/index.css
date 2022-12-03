@@ -1,0 +1,24 @@
+body{margin:0;}
+#body{
+    display: flex;
+    flex-direction: row;
+}
+#btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#main_items{
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 5px 5px;
+}
+.item{
+    border: 1px solid black;
+}
+#buttons{
+    display: flex;
+    justify-content: space-around;
+}

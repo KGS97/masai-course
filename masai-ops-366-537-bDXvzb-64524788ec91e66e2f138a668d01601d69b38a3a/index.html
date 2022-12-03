@@ -7,16 +7,25 @@
     <link rel="stylesheet" href="styles/index.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body style>
     <div id="navbar">
       <!-- Add Your navbar here  -->
     </div>
     <div id="buttons">
       <!-- add previous, next buttons and page number here -->
+      <button id="previous">Previous</button>
+      <button id="next">Next</button>
     </div>
-    <div id="main_items">
-      <!-- append all items here -->
+    <div id="body">
+      <div id="btns">
+        <button id="sort-lth" class="btns">Sort Low to High</button>
+        <button id="sort-htl" class="btns">Sort High to Low</button>
+      </div>
+      <div id="main_items">
+        <!-- append all items here -->
+      </div>
     </div>
-    <script src="./src/scripts/index.js"></script>
+
+    <script src="./src/scripts/index.js" type="module"></script>
   </body>
 </html>
