@@ -58,18 +58,13 @@ async function showData(page, loaded) {
 function add2C() {
   console.log("ok");
 }
+var Timeouthtl;
 function sorthtl(data) {
   console.log("htl");
-  for (let i = 0; i < data.length; i++) {
-    for (let j = i + 1; j < data.length; j++) {
-      if (data[i].price < data[j].price) {
-        var temp = data[i];
-        data[i] = data[j];
-        data[j] = temp;
-      }
-    }
+  if (Timeouthtl) {
+    clearTimeout();
   }
-  showData(1, data);
+  Timeouthtl = setTimeout(debouncehtl, 100, data);
 }
 function sortlth(data) {
   for (let i = 0; i < data.length; i++) {
@@ -82,5 +77,17 @@ function sortlth(data) {
     }
   }
   //console.log(data);
+  showData(1, data);
+}
+function debouncehtl(data) {
+  for (let i = 0; i < data.length; i++) {
+    for (let j = i + 1; j < data.length; j++) {
+      if (data[i].price < data[j].price) {
+        var temp = data[i];
+        data[i] = data[j];
+        data[j] = temp;
+      }
+    }
+  }
   showData(1, data);
 }
