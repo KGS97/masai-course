@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="App">
       <h1>Hello React</h1>
-      <Counter />
-      <InputBox />
+      {/* <Counter />
+      <InputBox /> */}
     </div>
   );
 }
