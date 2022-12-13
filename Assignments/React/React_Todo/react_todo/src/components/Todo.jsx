@@ -60,7 +60,7 @@ function Todo(val, index) {
   }
   return (
     <>
-      {Card()}
+      <Card />
       <TodoList list={list} />
     </>
   );
