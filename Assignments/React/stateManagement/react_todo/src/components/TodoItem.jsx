@@ -1,16 +1,21 @@
 function TodoItem(props) {
-  let { item, index, EditTodo, DeleteTodo } = props;
+  let { item, index, EditTodo, DeleteTodo, UpdateStatus } = props;
+  let { name, status } = item;
+  console.log(index);
   return (
     <tr style={tditem()}>
       <td>
         <input
           type="checkbox"
           className="checkboxes"
-          onChange={(event) => event.target.value}
+          onClick={() => {
+            UpdateStatus(index);
+          }}
+          checked={status}
           style={CheckBoxStyle()}
         />
       </td>
-      <td>{item}</td>
+      <td>{name}</td>
       <td style={buttonsStyle()}>
         <i
           onClick={() => {

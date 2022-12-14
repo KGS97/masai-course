@@ -2,8 +2,14 @@ import { useState } from "react";
 import TodoList from "./TodoList";
 function Todo(val, index) {
   let [list, changeList] = useState([]);
+  let UpdateStatus = (index) => {
+    console.log(list[index]);
+    list[index].status = !list[index].status;
+    console.log(list[index].status);
+    changeList([...list]);
+  };
   let AddTodo = (val) => {
-    changeList([...list, val]);
+    changeList([...list, { name: val, status: false }]);
   };
   let DeleteTodo = (index) => {
     console.log("delete Todo", index);
@@ -14,7 +20,7 @@ function Todo(val, index) {
   let EditTodo = (index) => {
     console.log("edit Todo");
     changeList((list) => {
-      list[index] = window.prompt("Rename the task", list[index]);
+      list[index].name = window.prompt("Rename the task", list[index].name);
       let newList = [...list];
       return newList;
     });
@@ -72,7 +78,12 @@ function Todo(val, index) {
   return (
     <>
       <Card />
-      <TodoList list={list} DeleteTodo={DeleteTodo} EditTodo={EditTodo} />
+      <TodoList
+        list={list}
+        DeleteTodo={DeleteTodo}
+        EditTodo={EditTodo}
+        UpdateStatus={UpdateStatus}
+      />
     </>
   );
 }
