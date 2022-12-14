@@ -3,9 +3,9 @@ import TodoList from "./TodoList";
 function Todo(val, index) {
   let [list, changeList] = useState([]);
   let UpdateStatus = (index) => {
-    console.log(list[index]);
+    //console.log(list[index]);
     list[index].status = !list[index].status;
-    console.log(list[index].status);
+    //console.log(list[index].status);
     changeList([...list]);
   };
   let AddTodo = (val) => {
