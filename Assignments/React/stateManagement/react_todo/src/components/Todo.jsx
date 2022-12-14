@@ -6,7 +6,18 @@ function Todo(val, index) {
     changeList([...list, val]);
   };
   let DeleteTodo = (index) => {
-    changeList(() => list.splice(index, 1));
+    console.log("delete Todo", index);
+    list.splice(index, 1);
+    let newList = [...list];
+    changeList(newList);
+  };
+  let EditTodo = (index) => {
+    console.log("edit Todo");
+    changeList((list) => {
+      list[index] = window.prompt("Rename the task", list[index]);
+      let newList = [...list];
+      return newList;
+    });
   };
   function Card() {
     let style = {
@@ -61,7 +72,7 @@ function Todo(val, index) {
   return (
     <>
       <Card />
-      <TodoList list={list} />
+      <TodoList list={list} DeleteTodo={DeleteTodo} EditTodo={EditTodo} />
     </>
   );
 }

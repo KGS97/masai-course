@@ -1,7 +1,7 @@
 import Card from "./Card";
 import TodoItem from "./TodoItem";
 function TodoList(props) {
-  let { list } = props;
+  let { list, DeleteTodo, EditTodo } = props;
   let style = {
     minHeight: "100px",
     width: "47.5%",
@@ -20,7 +20,12 @@ function TodoList(props) {
         return (
           <table style={tableStyle()}>
             <tbody>
-              <TodoItem item={elem} index={index} />
+              <TodoItem
+                item={elem}
+                index={index}
+                DeleteTodo={DeleteTodo}
+                EditTodo={EditTodo}
+              />
             </tbody>
           </table>
         );

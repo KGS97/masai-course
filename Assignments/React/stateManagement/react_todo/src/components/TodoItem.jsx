@@ -1,5 +1,5 @@
 function TodoItem(props) {
-  let { item, index } = props;
+  let { item, index, EditTodo, DeleteTodo } = props;
   return (
     <tr style={tditem()}>
       <td>
@@ -7,15 +7,22 @@ function TodoItem(props) {
           type="checkbox"
           className="checkboxes"
           onChange={(event) => event.target.value}
+          style={CheckBoxStyle()}
         />
       </td>
       <td>{item}</td>
       <td style={buttonsStyle()}>
         <i
+          onClick={() => {
+            EditTodo(index);
+          }}
           style={{ cursor: "pointer" }}
           className="fa-regular fa-pen-to-square"
         ></i>
         <i
+          onClick={() => {
+            DeleteTodo(index);
+          }}
           style={{ cursor: "pointer" }}
           className="fa-regular fa-trash-can"
         ></i>
@@ -28,15 +35,29 @@ let tditem = () => {
   let style = {
     display: "flex",
     flexDirection: "row",
-    justifyContent: "space-evenly",
+    justifyContent: "space-between",
+    border: ".5px solid lightgray",
+    borderRadius: "5px",
+    padding: "15px",
+    fontWeight: "400",
+    fontSize: "20px",
+    letterSpacing: "1px",
   };
   return style;
 };
 function buttonsStyle() {
   let style = {
-    width: "7.5%",
+    width: "9%",
     display: "flex",
-    justifyContent: "space-around",
+    justifyContent: "space-between",
   };
   return style;
+}
+function CheckBoxStyle() {
+  return {
+    width: "20px",
+    height: "20px",
+    borderRadius: "5px",
+    marginLeft: "auto",
+  };
 }

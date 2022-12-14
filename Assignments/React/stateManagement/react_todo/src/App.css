@@ -36,6 +36,6 @@
     transform: rotate(360deg);
   }
 }
-.checkboxes{
-  border-radius: 10px;
+.checkboxes:checked{
+background-color: '#5b04ba';
 }

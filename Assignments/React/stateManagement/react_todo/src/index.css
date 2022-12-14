@@ -11,3 +11,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.checkboxes:checked ~ .checkboxes {
+  background-color: #5b04ba;
+}
