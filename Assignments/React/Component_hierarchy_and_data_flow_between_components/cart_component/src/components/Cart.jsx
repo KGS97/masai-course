@@ -19,9 +19,7 @@ function Cart() {
       UpdateStates();
     }
   };
-  let calculateTotal = (total, elem) => {
-    return total + elem.price * elem.quantity;
-  };
+
   let UpdateStates = () => {
     UpdateCartList([...CartList]);
     let sum = CartList.reduce((sum, elem) => {
