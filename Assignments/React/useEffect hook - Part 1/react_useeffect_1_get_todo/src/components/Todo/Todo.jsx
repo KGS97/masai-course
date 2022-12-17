@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import RenderData from "../RenderData/RenderData";
 export default function Todo() {
+  console.log("component");
   let [Loading, Loaded] = useState(true);
   let [Error, ReceiveError] = useState(false);
   let [Currdata, updateCurrData] = useState();
