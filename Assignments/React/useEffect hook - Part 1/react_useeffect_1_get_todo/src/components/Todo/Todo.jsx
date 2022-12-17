@@ -35,20 +35,18 @@ export default function Todo() {
         });
         UpdateRelatedPages(relatedPages);
       } catch {
+        console.log("fails");
         ReceiveError(true);
         Loaded(false);
       }
     }
-  }, [pageUrl]);
-  useEffect(() => {
-    if (Loading) document.title = "Loading...";
-    else if (Error) document.title = "Something went wrong";
-    else if (!Error) {
-      document.title = "React App";
-      return RenderData(Currdata, UpdatePageUrlHandler, relatedPages);
-    }
-  }, [Loading, Error]);
+  }, [pageUrl, Error, Loading]);
   var UpdatePageUrlHandler = (url) => {
     UpdatePageUrl(url);
   };
+  if (Loading) return <p>Loading...</p>;
+  else if (Error) return <p>Something went wrong</p>;
+  else if (!Error) {
+    return RenderData(Currdata, UpdatePageUrlHandler, relatedPages);
+  }
 }
