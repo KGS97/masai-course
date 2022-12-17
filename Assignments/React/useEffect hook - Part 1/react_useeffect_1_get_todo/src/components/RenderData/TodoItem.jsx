@@ -1,5 +1,5 @@
 export default function TodoItem(elem, index, props) {
-  console.log(props);
+  //console.log(props);
   let { title, id, completed } = elem;
   return (
     <tr>
