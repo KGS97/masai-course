@@ -31,9 +31,27 @@ export default function StopWatch() {
           intervalRef.current ? StopWatch() : StartWatch();
         }}
       >
-        <p style={{ margin: "auto" }}>{secs}</p>
+        <p
+          style={{
+            margin: "auto",
+            padding: "5px",
+            height: "100%",
+            width: "100%",
+            border: "1px solid black",
+            borderRadius: "100px",
+          }}
+        >
+          {secs}
+        </p>
       </div>
-      <button onClick={() => updateSecs(0)}>Reset</button>
+      <button
+        onClick={() => {
+          clearInterval(intervalRef.current);
+          updateSecs(0);
+        }}
+      >
+        Reset
+      </button>
     </>
   );
 }
