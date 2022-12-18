@@ -1,10 +1,10 @@
 import "./App.css";
-import Form from "./components/Form";
+import ScrollContainer from "./components/ScrollContainer";
 function App() {
   return (
     <div className="App">
       <p>Hello World</p>
-      <Form />
+      <ScrollContainer />
     </div>
   );
 }
