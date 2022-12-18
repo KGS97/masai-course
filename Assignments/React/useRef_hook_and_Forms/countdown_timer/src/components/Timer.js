@@ -1,18 +1,25 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 let Form = () => {
-  let [secs, updateSecs] = useState(0);
-  let intervalRef = useRef();
+  useEffect(() => {
+    return clearInterval(intervalRef);
+  }, []);
+  let [secs, updateSecs] = useState(prompt);
+  let intervalRef = useRef(null);
   let startTimer = () => {
+    console.log("started");
     intervalRef.current = setInterval(() => {
-      updateSecs((secs) => secs + 1);
-    });
+      if (secs > 0) {
+        console.log("updating secs");
+        updateSecs((secs) => secs - 1);
+      } else clearInterval(intervalRef.current);
+    }, 1000);
   };
   let stopTimer = () => {
     clearInterval(intervalRef.current);
   };
   let resetTimer = () => {
-    updateSecs(0);
     clearInterval(intervalRef.current);
+    updateSecs(prompt);
   };
   return (
     <>
