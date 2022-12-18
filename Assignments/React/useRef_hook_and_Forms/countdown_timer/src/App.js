@@ -1,10 +1,10 @@
 import "./App.css";
-import Form from "./components/Form";
+import Timer from "./components/Timer";
 function App() {
   return (
     <div className="App">
       <p>Hello World</p>
-      <Form />
+      <Timer />
     </div>
   );
 }
