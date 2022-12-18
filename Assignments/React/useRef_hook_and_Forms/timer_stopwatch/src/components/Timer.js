@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-let Form = () => {
+let Timer = () => {
   let [data, updateData] = useState({});
   let checkboxRef = useRef(false);
   let onChangeHandler = (props) => {
@@ -48,4 +48,4 @@ let Form = () => {
   );
 };
 
-export default Form;
+export default Timer;
