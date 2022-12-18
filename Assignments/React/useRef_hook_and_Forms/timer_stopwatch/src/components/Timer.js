@@ -1,6 +1,11 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 let Timer = () => {
   let [secs, updateSecs] = useState(0);
+  useEffect(() => {
+    return () => {
+      clearInterval(intervalRef.current);
+    };
+  }, []);
   let intervalRef = useRef(null);
   let inputRef = useRef(null);
   let StartTimer = () => {
