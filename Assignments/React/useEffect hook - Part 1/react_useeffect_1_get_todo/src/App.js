@@ -4,7 +4,10 @@ import FetchData from "./components/FetchData";
 function App() {
   return (
     <div className="App">
-      <Todo />
+      <div>
+        <FetchData />
+      </div>
+      {/* <Todo /> */}
     </div>
   );
 }
