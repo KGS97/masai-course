@@ -1,6 +1,7 @@
 export default function RelatedPages(UpdateRelatedPagesHandler, response) {
+  console.log(response);
   let head = response.headers.get("Link");
-  head = response.headers.get("Link").split(",");
+  head = head.split(",");
   head = head.map((elem) => elem.split(";"));
   head = head.map((elem) => {
     let string = [elem[0], elem[1].substring(6, 10)];

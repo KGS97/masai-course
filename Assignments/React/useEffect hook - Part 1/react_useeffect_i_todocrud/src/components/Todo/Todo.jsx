@@ -6,6 +6,7 @@ export default function Todo() {
   let [pageUrl, UpdatePageUrl] = useState(
     "http://localhost:3000/todos?_page=1&_limit=5"
   );
+
   let [relatedPages, UpdateRelatedPages] = useState({});
   useEffect(() => {
     fetch(pageUrl)
@@ -21,11 +22,24 @@ export default function Todo() {
   var UpdatePageUrlHandler = (url) => {
     UpdatePageUrl(url);
   };
+  var deleteItem = (id) => {};
+  var updateItem = (newVal, id) => {
+    fetch(`http://localhost:3000/todos/${id}`, {
+      method: "PATCH",
+      body: JSON.stringify({ title: `${newVal}` }),
+    });
+  };
   var UpdateRelatedPagesHandler = (relatedPages) => {
     UpdateRelatedPages(relatedPages);
   };
   if (Currdata && relatedPages)
-    return RenderData(Currdata, UpdatePageUrlHandler, relatedPages);
+    return RenderData(
+      Currdata,
+      UpdatePageUrlHandler,
+      relatedPages,
+      deleteItem,
+      updateItem
+    );
 
   // if (Loading) return <p>Loading...</p>;
   // else if (Error) return <p>Something went wrong</p>;
