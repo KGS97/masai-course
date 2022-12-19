@@ -4,7 +4,6 @@ export default function RenderData(
   UpdatePageUrlHandler,
   relatedPages
 ) {
-  console.log(Currdata);
   return (
     <>
       <table>
@@ -14,10 +13,19 @@ export default function RenderData(
           })}
         </tbody>
       </table>
-      <button onClick={() => UpdatePageUrlHandler(relatedPages.previous)}>
+      <button
+        onClick={() => {
+          if (relatedPages.previous)
+            UpdatePageUrlHandler(relatedPages.previous);
+        }}
+      >
         Prev
       </button>
-      <button onClick={() => UpdatePageUrlHandler(relatedPages.next)}>
+      <button
+        onClick={() => {
+          if (relatedPages.next) UpdatePageUrlHandler(relatedPages.next);
+        }}
+      >
         Next
       </button>
     </>
