@@ -1,11 +1,8 @@
-import Timer from "./components/Timer";
-import StopWatch from "./components/StopWatch";
+import Rapp from "./components/Rapp";
 function App() {
   return (
     <div className="App">
-      <p>Hello World</p>
-      <Timer />
-      <StopWatch />
+      <Rapp />
     </div>
   );
 }
