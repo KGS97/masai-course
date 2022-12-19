@@ -11,6 +11,7 @@ export default function StopWatch() {
     console.log("started watch");
     clearInterval(intervalRef.current);
     intervalRef.current = setInterval(() => {
+      console.log("running stopwatch");
       updateSecs((secs) => secs + 1);
     }, 1000);
   };

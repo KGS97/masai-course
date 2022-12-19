@@ -4,6 +4,7 @@ export default function Buttons(updateStateHandler) {
     <>
       <button onClick={() => updateStateHandler("timer")}>Timer</button>
       <button onClick={() => updateStateHandler("stopwatch")}>Stopwatch</button>
+      <br />
     </>
   );
 }

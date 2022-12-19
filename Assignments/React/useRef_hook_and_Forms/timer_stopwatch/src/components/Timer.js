@@ -11,6 +11,7 @@ let Timer = () => {
   let StartTimer = () => {
     clearInterval(intervalRef.current);
     intervalRef.current = setInterval(() => {
+      console.log("running timer");
       updateSecs((secs) => secs - 1);
     }, 1000);
   };
