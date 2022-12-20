@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import RenderData from "../RenderData/RenderData";
 import RelatedPages from "./RelatedPages";
 export default function Todo() {
+  let [Loading, UpdateLoading] = useState(true);
+  let [Error, UpdateError] = useState(false);
   let [Currdata, updateCurrData] = useState();
   let [pageUrl, UpdatePageUrl] = useState(
     "http://localhost:3000/todos?_page=1&_limit=5"
@@ -27,9 +29,9 @@ export default function Todo() {
   if (Currdata && relatedPages)
     return RenderData(Currdata, UpdatePageUrlHandler, relatedPages);
 
-  // if (Loading) return <p>Loading...</p>;
-  // else if (Error) return <p>Something went wrong</p>;
-  // else if (!Error) {
-  //   return RenderData(Currdata, UpdatePageUrlHandler, relatedPages);
-  // }
+  if (Loading) return <p>Loading...</p>;
+  else if (Error) return <p>Something went wrong</p>;
+  else if (!Error) {
+    return RenderData(Currdata, UpdatePageUrlHandler, relatedPages);
+  }
 }
