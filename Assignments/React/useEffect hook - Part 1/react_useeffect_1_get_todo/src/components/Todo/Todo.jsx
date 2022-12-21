@@ -26,12 +26,9 @@ export default function Todo() {
   var UpdateRelatedPagesHandler = (relatedPages) => {
     UpdateRelatedPages(relatedPages);
   };
-  if (Currdata && relatedPages)
-    return RenderData(Currdata, UpdatePageUrlHandler, relatedPages);
+  // if (Currdata && relatedPages)
+  //   return RenderData(Currdata, UpdatePageUrlHandler, relatedPages);
 
-  if (Loading) return <p>Loading...</p>;
-  else if (Error) return <p>Something went wrong</p>;
-  else if (!Error) {
-    return RenderData(Currdata, UpdatePageUrlHandler, relatedPages);
+  return Loading ? <p>Loading...</p>:Error? <p>Something went wrong</p>:RenderData(Currdata, UpdatePageUrlHandler, relatedPages);
   }
 }
