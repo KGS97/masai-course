@@ -13,6 +13,7 @@ export default function Todo() {
     fetch(pageUrl)
       .then((res) => {
         RelatedPages(UpdateRelatedPagesHandler, res);
+        UpdateLoading(false);
         return res.json();
       })
       .then((data) => {
@@ -26,9 +27,12 @@ export default function Todo() {
   var UpdateRelatedPagesHandler = (relatedPages) => {
     UpdateRelatedPages(relatedPages);
   };
-  // if (Currdata && relatedPages)
-  //   return RenderData(Currdata, UpdatePageUrlHandler, relatedPages);
 
-  return Loading ? <p>Loading...</p>:Error? <p>Something went wrong</p>:RenderData(Currdata, UpdatePageUrlHandler, relatedPages);
-  }
+  return Loading ? (
+    <p>Loading...</p>
+  ) : Error ? (
+    <p>Something went wrong</p>
+  ) : (
+    RenderData(Currdata, UpdatePageUrlHandler, relatedPages)
+  );
 }
