@@ -1,11 +1,13 @@
 import TodoItem from "./TodoItem";
-export default function RenderData(
-  Currdata,
-  UpdatePageUrlHandler,
-  relatedPages,
-  deleteItem,
-  updateItem
-) {
+export default function RenderData(props) {
+  let {
+    Currdata,
+    UpdatePageUrlHandler,
+    relatedPages,
+    deleteItem,
+    updateItem,
+    UpdateCrudNumhandler,
+  } = props;
   return (
     <>
       <table>
@@ -16,7 +18,8 @@ export default function RenderData(
               index,
               UpdatePageUrlHandler,
               deleteItem,
-              updateItem
+              updateItem,
+              UpdateCrudNumhandler
             );
           })}
         </tbody>

@@ -1,7 +1,12 @@
 import { useState, useEffect } from "react";
 import RenderData from "../RenderData/RenderData";
 import RelatedPages from "./RelatedPages";
+import { deleteItem, updateItem, createItem } from "../utils/crud";
+import Navbar from "../Navbar";
 export default function Todo() {
+  let [Loading, UpdateLoading] = useState(true);
+  let [Error, UpdateError] = useState(null);
+  let [crudNum, UpdateCrudNum] = useState(0);
   let [Currdata, updateCurrData] = useState();
   let [pageUrl, UpdatePageUrl] = useState(
     "http://localhost:3000/todos?_page=1&_limit=5"
@@ -9,41 +14,49 @@ export default function Todo() {
 
   let [relatedPages, UpdateRelatedPages] = useState({});
   useEffect(() => {
-    fetch(pageUrl)
-      .then((res) => {
-        RelatedPages(UpdateRelatedPagesHandler, res);
-        return res.json();
-      })
-      .then((data) => {
-        updateCurrData(data);
-      });
+    try {
+      console.log("trying");
+      fetch(pageUrl)
+        .then((res) => {
+          console.log(res);
+          UpdateLoading(false);
+          RelatedPages(UpdateRelatedPagesHandler, res);
+          return res.json();
+        })
+        .then((data) => {
+          updateCurrData(data);
+        });
+    } catch {
+      UpdateLoading(false);
+      UpdateError(true);
+    }
   }, [pageUrl]);
 
-  var UpdatePageUrlHandler = (url) => {
+  let UpdatePageUrlHandler = (url) => {
     UpdatePageUrl(url);
   };
-  var deleteItem = (id) => {};
-  var updateItem = (newVal, id) => {
-    fetch(`http://localhost:3000/todos/${id}`, {
-      method: "PATCH",
-      body: JSON.stringify({ title: `${newVal}` }),
-    });
-  };
-  var UpdateRelatedPagesHandler = (relatedPages) => {
+
+  let UpdateRelatedPagesHandler = (relatedPages) => {
     UpdateRelatedPages(relatedPages);
   };
-  if (Currdata && relatedPages)
-    return RenderData(
-      Currdata,
-      UpdatePageUrlHandler,
-      relatedPages,
-      deleteItem,
-      updateItem
-    );
-
-  // if (Loading) return <p>Loading...</p>;
-  // else if (Error) return <p>Something went wrong</p>;
-  // else if (!Error) {
-  //   return RenderData(Currdata, UpdatePageUrlHandler, relatedPages);
-  // }
+  let UpdateCrudNumhandler = () => {
+    UpdateCrudNum((crudNum) => crudNum + 1);
+  };
+  return Loading ? (
+    <p>Loading...</p>
+  ) : Error ? (
+    <p>Something went wrong</p>
+  ) : (
+    <>
+      <Navbar />
+      <RenderData
+        Currdata={Currdata}
+        UpdatePageUrlHandler={UpdatePageUrlHandler}
+        relatedPages={relatedPages}
+        deleteItem={deleteItem}
+        updateItem={updateItem}
+        UpdateCrudNumhandler={UpdateCrudNumhandler}
+      />
+    </>
+  );
 }

@@ -1,20 +1,33 @@
-export default function TodoItem(elem, deleteItem, updateItem) {
+export default function TodoItem(
+  elem,
+  index,
+  UpdatePageUrlHandler,
+  deleteItem,
+  updateItem,
+  UpdateCrudNumhandler
+) {
   let { title, id, completed } = elem;
   return (
     <tr>
       <td>{id}</td>
       <td>{title}</td>
       <td>
-        <input type="checkbox" defaultChecked={completed} />
+        <input
+          type="checkbox"
+          defaultChecked={completed}
+          onChange={() => {
+            updateItem(id, !completed);
+            UpdateCrudNumhandler();
+          }}
+        />
       </td>
       <td>
         <i
-          className="fa-regular fa-pen-to-square"
-          onClick={() => updateItem(prompt("Update Task Name", title), id)}
-        ></i>
-        <i
           className="fa-regular fa-trash-can"
-          onClick={() => deleteItem(id)}
+          onClick={() => {
+            deleteItem(id);
+            UpdateCrudNumhandler();
+          }}
         ></i>
       </td>
     </tr>
