@@ -1,7 +1,12 @@
 import "./App.css";
-
+import AuthContext from "./Context/AuthContext";
+import Page from "./Components/Page/Page";
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <Page />
+    </div>
+  );
 }
 
 export default App;
