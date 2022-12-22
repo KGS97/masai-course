@@ -5,7 +5,13 @@ function Dashboard_Head(props) {
   const { theme, ChangeTheme } = useContext(ThemeContext);
 
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "space-around",
+        padding: "20px 10px ",
+      }}
+    >
       <h2>My Dashboard</h2>
       {theme === "Light" ? (
         <button
@@ -22,9 +28,9 @@ function Dashboard_Head(props) {
           onClick={() => {
             ChangeTheme("Light");
           }}
-        >
-          Light Mode
-        </button>
+          Light
+          Mode
+        ></button>
       )}
     </div>
   );

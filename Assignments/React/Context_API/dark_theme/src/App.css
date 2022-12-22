@@ -40,15 +40,14 @@
 button{
   border-radius: 5px;
   padding: 5px 10px;
-  cursor:pointer
+  cursor:pointer;
+  
 }
-.Light *{
+.Light{
   margin:0;
- background-color: ghostwhite; 
- color: black;
+ background-color: #F5F6FA; 
 }
-.Dark *{
+.Dark{
   margin: 0;
-  background-color: black;
-  color: lightgray;
+  background-color: #1F2327;
 }

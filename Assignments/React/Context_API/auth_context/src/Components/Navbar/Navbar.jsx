@@ -24,7 +24,7 @@ function Navbar(props) {
           onClick={() => {
             let name = nameRef.current.value;
             let pass = passRef.current.value;
-            logIn(name, pass);
+            logIn(name, pass, toggleAuthHandler);
           }}
         >
           Login
@@ -35,15 +35,21 @@ function Navbar(props) {
 }
 
 export default Navbar;
-function logIn(name, pass) {
-  console.log(name, pass);
+function logIn(email, password, toggleAuthHandler) {
   fetch(`https://reqres.in/api/login`, {
     method: "POST",
-    body: JSON.stringify({
-      email: "eve.holt@reqres.in",
-      password: "cityslicka",
-    }),
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ email, password }),
   })
     .then((res) => res.json())
-    .then((data) => console.log(data));
+    .then((data) => {
+      {
+        if (Object.keys(data)[0] === "token") toggleAuthHandler(true);
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 }
