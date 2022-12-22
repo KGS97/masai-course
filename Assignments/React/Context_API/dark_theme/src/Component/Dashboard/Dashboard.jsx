@@ -2,7 +2,7 @@ import React from "react";
 import DashboardHead from "./DashboardHead/DashboardHead";
 import CardsContext from "../../Context/CardsContext";
 import ThemeContext from "../../Context/ThemeContext";
-import DashboardBody from "../Dashboard/Dashboard_Body/Dashboard_Container/";
+import DashboardContainer from "../Dashboard/Dashboard_Body/DashboardContainer";
 function Dashboard(props) {
   let Cards = [
     {
