@@ -39,8 +39,8 @@
 
 button{
   border-radius: 5px;
-  padding: 5px 10px;
   cursor:pointer;
+  padding: 0 25px;
   
 }
 .Light{
@@ -50,4 +50,7 @@ button{
 .Dark{
   margin: 0;
   background-color: #1F2327;
+}
+*{
+  font-family: Roboto;
 }

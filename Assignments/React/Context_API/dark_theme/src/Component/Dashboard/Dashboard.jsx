@@ -2,23 +2,29 @@ import React from "react";
 import DashboardHead from "./DashboardHead/DashboardHead";
 import CardsContext from "../../Context/CardsContext";
 import ThemeContext from "../../Context/ThemeContext";
-import DashboardContainer from "../Dashboard/Dashboard_Body/DashboardContainer";
+import DashboardContainer from "../Dashboard/DashboardBody/DashboardContainer";
 function Dashboard(props) {
   let Cards = [
     {
       name: "Nrupul Dev",
-      avatar: "https://robohash.org/eanobisipsum.png?size=300x300&set=set1",
+      avatar:
+        "https://images.unsplash.com/photo-1568316674077-d72ee56de61c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fDB8fA%3D%3D&w=1000&q=80",
       Location: "Bangalore,India",
+      points: 4732,
     },
     {
       name: "Nrupul Dev",
-      avatar: "https://robohash.org/eanobisipsum.png?size=300x300&set=set1",
+      avatar:
+        "https://images.unsplash.com/photo-1568316674077-d72ee56de61c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fDB8fA%3D%3D&w=1000&q=80",
       Location: "Bangalore,India",
+      points: 2339,
     },
     {
       name: "Nrupul Dev",
-      avatar: "https://robohash.org/eanobisipsum.png?size=300x300&set=set1",
+      avatar:
+        "https://images.unsplash.com/photo-1568316674077-d72ee56de61c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fDB8fA%3D%3D&w=1000&q=80",
       Location: "Bangalore,India",
+      points: 1884,
     },
   ];
   let [theme, ChangeTheme] = React.useState("Light");
@@ -30,12 +36,12 @@ function Dashboard(props) {
 
   return (
     <div className={theme === "Light" ? "Light" : "Dark"}>
-      <CardsContext.Provider value={Cards}>
-        <ThemeContext.Provider value={{ theme, ChangeTheme }}>
+      <ThemeContext.Provider value={{ theme, ChangeTheme }}>
+        <CardsContext.Provider value={Cards}>
           <DashboardHead />
           <DashboardContainer />
-        </ThemeContext.Provider>
-      </CardsContext.Provider>
+        </CardsContext.Provider>
+      </ThemeContext.Provider>
     </div>
   );
 }

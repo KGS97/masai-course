@@ -41,16 +41,20 @@ function LightButton() {
   let style = {
     color: "black",
     backgroundColor: "white",
-    border: "1px solid lightgray",
+    border: "0",
+    boxShadow: "0px 1px 4px lightgray",
+    fontWeight: "100",
   };
   return style;
 }
 
 function DarkButton() {
   let style = {
+    fontWeight: "100",
     color: "white",
-    backgroundColor: "darkgray",
-    border: "1px solid white",
+    backgroundColor: "#292E33",
+    border: "0",
+    boxShadow: "0px 1px 4px rgba(0, 0, 0, 0.2)",
   };
   return style;
 }
@@ -58,6 +62,8 @@ function DarkButton() {
 function headinH2Style(theme) {
   let style = {
     color: theme === "Light" ? "Black" : "white",
+    fontSize: "24px",
+    fontWeight: "400",
   };
   return style;
 }
