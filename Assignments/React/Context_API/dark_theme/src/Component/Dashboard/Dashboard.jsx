@@ -33,7 +33,7 @@ function Dashboard(props) {
       <CardsContext.Provider value={Cards}>
         <ThemeContext.Provider value={{ theme, ChangeTheme }}>
           <DashboardHead />
-          <DashboardBody />
+          <DashboardContainer />
         </ThemeContext.Provider>
       </CardsContext.Provider>
     </div>
