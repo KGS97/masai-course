@@ -12,7 +12,7 @@ function Dashboard_Head(props) {
         padding: "20px 10px ",
       }}
     >
-      <h2>My Dashboard</h2>
+      <h2 style={headinH2Style(theme)}>My Dashboard</h2>
       {theme === "Light" ? (
         <button
           style={LightButton()}
@@ -28,9 +28,9 @@ function Dashboard_Head(props) {
           onClick={() => {
             ChangeTheme("Light");
           }}
-          Light
-          Mode
-        ></button>
+        >
+          Light Mode
+        </button>
       )}
     </div>
   );
@@ -51,6 +51,13 @@ function DarkButton() {
     color: "white",
     backgroundColor: "darkgray",
     border: "1px solid white",
+  };
+  return style;
+}
+
+function headinH2Style(theme) {
+  let style = {
+    color: theme === "Light" ? "Black" : "white",
   };
   return style;
 }
