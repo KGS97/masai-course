@@ -12,7 +12,7 @@ function CardsContainer(props) {
           <p style={locationStyle(theme)}>{Location}</p>
         </div>
       </div>
-      <p style={{ fontSize: "12px" }}>{points} points</p>
+      <p style={{ fontSize: "10px" }}>{points} points</p>
       <div style={progressStyle(theme)}>
         <div style={pointsStyle(points)}></div>
       </div>
