@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+button{
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor:pointer
+}
+.Light *{
+  margin:0;
+ background-color: ghostwhite; 
+ color: black;
+}
+.Dark *{
+  margin: 0;
+  background-color: black;
+  color: lightgray;
+}
