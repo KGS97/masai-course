@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.avatar{
+  border-radius: 100px;
+  padding:20px
+}
+td{
+  padding:20px
+}
