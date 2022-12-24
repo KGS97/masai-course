@@ -7,7 +7,7 @@ function Dashboard(props) {
   return (
     <div>
       <p>Welcome to Dashboard</p>
-      <Link to={IsAuth ? "Settings" : "/Login"}>Settings</Link>
+      <Link to={IsAuth ? "settings" : "/login"}>Settings</Link>
     </div>
   );
 }

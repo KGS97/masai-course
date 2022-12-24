@@ -22,7 +22,7 @@ function Login(props) {
           if (verified) {
             console.log("ok");
             ToggleAuth(true);
-            navigate("/");
+            navigate(-1);
           } else {
             alert("Please enter valid credentials");
           }

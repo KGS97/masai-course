@@ -7,7 +7,7 @@ function Nav(props) {
   return (
     <nav className="navbar bg-dark" data-bs-theme="dark">
       <Link to="/">Home</Link>
-      <Link to="/Dashboard">Dashboard</Link>
+      <Link to="/dashboard">Dashboard</Link>
       {IsAuth ? (
         <button
           onClick={() => {

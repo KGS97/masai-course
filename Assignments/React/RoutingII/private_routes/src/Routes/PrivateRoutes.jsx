@@ -8,8 +8,8 @@ function PrivateRoutes(props) {
   const { IsAuth } = React.useContext(AuthContext);
   return (
     <Routes>
-      <Route path="/Dashboard" element={IsAuth ? <Dashboard /> : <Login />}>
-        <Route path="Settings" element={<Settings />} />
+      <Route path="/dashboard" element={IsAuth ? <Dashboard /> : <Login />}>
+        <Route path="settings" element={<Settings />} />
       </Route>
     </Routes>
   );
