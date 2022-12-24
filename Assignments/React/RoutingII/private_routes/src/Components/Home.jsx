@@ -6,19 +6,6 @@ function Home(props) {
   return (
     <>
       <p>Welcome to Home</p>
-      {IsAuth ? (
-        <button
-          onClick={() => {
-            ToggleAuth(!IsAuth);
-          }}
-        >
-          Logout
-        </button>
-      ) : (
-        <Link to="/login">
-          <button>Login</button>
-        </Link>
-      )}
     </>
   );
 }

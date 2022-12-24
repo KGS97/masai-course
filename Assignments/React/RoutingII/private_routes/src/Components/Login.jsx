@@ -4,8 +4,6 @@ import AuthContext from "../Context/AuthContext";
 
 function Login(props) {
   let { IsAuth, ToggleAuth } = React.useContext(AuthContext);
-  // console.log(IsAuth, ToggleAuth);
-  // console.log("login called");
   const navigate = useNavigate();
   let passRef = React.useRef();
   let mailRef = React.useRef();
@@ -23,8 +21,8 @@ function Login(props) {
           );
           if (verified) {
             console.log("ok");
-            navigate(-1);
             ToggleAuth(true);
+            navigate("/");
           } else {
             alert("Please enter valid credentials");
           }
