@@ -1,7 +1,7 @@
 import { useContext, useState, useEffect } from "react";
 import ProductsContext from "../Context/ProductsContext";
 import { Link, useSearchParams } from "react-router-dom";
-import parseLinkHeader from "parse-link-header";
+
 function ProductsContainer(props) {
   console.log("productscontainer called");
   const [data, setData] = useState();
