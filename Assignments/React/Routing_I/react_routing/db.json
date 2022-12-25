@@ -1,15 +1,14 @@
-{"products":[
+{
+  "products": [
     {
       "name": "SmartPhone",
       "price": 30,
       "id": 0
-
     },
     {
       "name": "Watch",
       "price": 20,
       "id": 1
-
     },
     {
       "name": "Shirt",
@@ -20,5 +19,11 @@
       "name": "Pants",
       "price": 100,
       "id": 3
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 4
     }
-]}
+  ]
+}

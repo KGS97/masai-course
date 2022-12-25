@@ -40,7 +40,7 @@ function App() {
           <Route
             path="/"
             element={
-              <Link to="/products">
+              <Link to="products?page=1&limit=2">
                 <button>Products</button>
               </Link>
             }
