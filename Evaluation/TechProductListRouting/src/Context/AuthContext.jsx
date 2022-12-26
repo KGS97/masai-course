@@ -1,4 +1,5 @@
-function AuthContextProvider() {
-}
+import { createContext } from "react";
 
-export default AuthContextProvider;
+const AuthContext = createContext();
+
+export default AuthContext;
