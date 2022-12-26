@@ -79,7 +79,7 @@ function Navbar(props) {
             Your Account
           </Link>
           <Link className="navlink" to="/cart" element={<LandfillDropout />}>
-            <i class="fa-solid fa-cart-shopping"></i>
+            <i className="fa-solid fa-cart-shopping"></i>
           </Link>
           <Link className="navlink" to="/search" element={<LandfillDropout />}>
             <i className="fa-solid fa-magnifying-glass"></i>

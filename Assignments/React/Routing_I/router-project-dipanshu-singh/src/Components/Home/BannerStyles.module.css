@@ -1,0 +1,35 @@
+.BannerContainer {
+    font-family: 'Nanum Myeongjo', serif;
+    display: flex;
+    text-align: center;
+    flex-grow: 1;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color:Black
+}
+
+p {
+    
+    border-bottom: 5px solid white;
+    transition: all 250ms;
+}
+p:hover{
+border-bottom: 5px solid gray;
+}
+img{margin:0}
+
+.BannerTitle {
+    font-size: 72px;
+    letter-spacing: -1.44px;
+    color: #000000;
+    text-decoration: none;
+    margin: auto;
+    max-width: fit-content;
+}
+
+
+.Banner-Container>div {
+    width: 50%;
+}
