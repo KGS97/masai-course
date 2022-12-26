@@ -40,13 +40,15 @@ function App() {
           <Route
             path="/"
             element={
-              <Link to="products?page=1&limit=2">
+              <Link to="products?page=1&limit=2&q=">
                 <button>Products</button>
               </Link>
             }
           ></Route>
-          <Route path="/products" element={<Products />} />
-          <Route path="/ProductPage/:id" element={<ProductPage />} />
+          <Route path="/products">
+            <Route index element={<Products />} />
+            <Route path=":id" element={<ProductPage />} />
+          </Route>
           <Route path="*" element={<p>Page does not exist</p>} />
         </Routes>
       </ProductsContext.Provider>
