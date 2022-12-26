@@ -1,4 +1,4 @@
-import { Link, redirect } from "react-router-dom";
+import { Link, redirect, useNavigate } from "react-router-dom";
 import React from "react";
 import AuthContext from "../Context/AuthContext";
 
@@ -7,7 +7,7 @@ function Login() {
   let [email, setEmail] = React.useState();
   let [password, setPassword] = React.useState();
   let { auth, token, updateAuth, updateToken } = context;
-
+  const navigate = useNavigate();
   async function loginUser(email, password) {
     try {
       let response = await fetch("https://reqres.in/api/login", {
@@ -24,7 +24,7 @@ function Login() {
         console.log(json);
         updateAuth(true);
         updateToken(json.token);
-        redirect("/dashboard");
+        navigate("/dashboard");
       }
     } catch {
       console.log("Something went wrong");
