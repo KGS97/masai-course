@@ -11,7 +11,6 @@ function Products(props) {
           <ProductsContainer />
         </tbody>
       </table>
-      <Pagination />
     </>
   );
 }
