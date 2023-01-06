@@ -4,7 +4,6 @@ import { todoContainerStyles } from "../styles";
 import { useDispatch, useSelector } from "react-redux";
 import thunkRender from "../Redux/Thunk_Action_Creators/ThunkFirstRender";
 import Todos from "./TodosContainer";
-import Store from "../Redux/Store/Store";
 const Todo = () => {
   const dispatch = useDispatch();
 
