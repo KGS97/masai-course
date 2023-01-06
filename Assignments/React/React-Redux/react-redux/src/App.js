@@ -2,13 +2,15 @@ import "./App.css";
 import Todo from "./Components/React_Components/Todo";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ToDoItemPage from "./Components/React_Components/ToDoItemPage";
+import Login from "./Components/React_Components/Login";
 function App() {
+  let token;
   return (
     <BrowserRouter>
       <div className="App">
         <Routes>
           <Route path="/">
-            <Route index element={<Todo />} />
+            <Route index element={token ? <Todo /> : <Login />} />
             <Route path="/:id" element={<ToDoItemPage />} />
           </Route>
         </Routes>

@@ -2,15 +2,9 @@
   "todos": [
     {
       "userId": 1,
-      "id": 2,
-      "title": "quis ut nam facilis et officia qui",
-      "completed": "false"
-    },
-    {
-      "userId": 1,
       "id": 3,
       "title": "fugiat veniam minus",
-      "completed": "true"
+      "completed": "false"
     },
     {
       "userId": 1,
@@ -22,6 +16,16 @@
       "userId": 1,
       "id": 5,
       "title": "laboriosam mollitia et enim quasi adipisci quia provident illum",
+      "completed": "false"
+    },
+    {
+      "title": "Shalom",
+      "id": 6,
+      "completed": "false"
+    },
+    {
+      "title": "BEde",
+      "id": 7,
       "completed": "false"
     }
   ]
