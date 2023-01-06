@@ -34,6 +34,7 @@ const TodoItem = (props) => {
           checked={completed === "true" ? true : false}
           onChange={() => dispatch(UpdateThunk(dispatch, id, completed))}
         />
+        {/* can read */}
         <button
           style={{
             backgroundColor: "white",
