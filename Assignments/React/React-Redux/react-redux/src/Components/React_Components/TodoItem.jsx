@@ -2,8 +2,10 @@ import React from "react";
 import UpdateThunk from "../Redux/Thunk_Action_Creators/UpdateThunk";
 import { useDispatch } from "react-redux";
 import DeleteThunk from "../Redux/Thunk_Action_Creators/DeleteThunk";
+import { useNavigate } from "react-router-dom";
 const TodoItem = (props) => {
   let dispatch = useDispatch();
+  let navigate = useNavigate();
   let {
     elem: { title, completed, id },
   } = props;
@@ -20,7 +22,9 @@ const TodoItem = (props) => {
         textAlign: "left",
       }}
     >
-      <p>{title}</p>
+      <p onClick={() => navigate(`/${id}`)} style={{ cursor: "pointer" }}>
+        {title}
+      </p>
       <div
         style={{
           display: "flex",
@@ -34,7 +38,6 @@ const TodoItem = (props) => {
           checked={completed === "true" ? true : false}
           onChange={() => dispatch(UpdateThunk(dispatch, id, completed))}
         />
-        {/* can read */}
         <button
           style={{
             backgroundColor: "white",

@@ -2,13 +2,22 @@ import "./App.css";
 import Todo from "./Components/React_Components/Todo";
 import { Provider } from "react-redux";
 import Store from "./Components/Redux/Store/Store";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ToDoItemPage from "./Components/React_Components/ToDoItemPage";
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
       <Provider store={Store}>
-        <Todo />
+        <div className="App">
+          <Routes>
+            <Route path="/">
+              <Route index element={<Todo />} />
+              <Route path="/:id" element={<ToDoItemPage />} />
+            </Route>
+          </Routes>
+        </div>
       </Provider>
-    </div>
+    </BrowserRouter>
   );
 }
 
