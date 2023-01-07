@@ -10,7 +10,7 @@ const Todo = () => {
   React.useEffect(() => {
     dispatch(thunkRender);
   }, []);
-  let data = useSelector((data) => data);
+  let data = useSelector((data) => data.todo.todos);
 
   return (
     <div style={todoContainerStyles()}>

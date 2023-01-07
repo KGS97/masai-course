@@ -3,8 +3,10 @@ import Todo from "./Components/React_Components/Todo";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ToDoItemPage from "./Components/React_Components/ToDoItemPage";
 import Login from "./Components/React_Components/Login";
+import { useSelector } from "react-redux";
 function App() {
-  let token;
+  let token = useSelector((data) => data.login.token);
+  console.log(token);
   return (
     <BrowserRouter>
       <div className="App">
