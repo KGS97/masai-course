@@ -5,7 +5,9 @@ import ToDoItemPage from "./Components/React_Components/ToDoItemPage";
 import Login from "./Components/React_Components/Login";
 import { useSelector } from "react-redux";
 function App() {
-  let token = useSelector((data) => data.login.token);
+  let token = useSelector(
+    (data) => data.login.token || localStorage.getItem("token")
+  );
   console.log(token);
   return (
     <BrowserRouter>
